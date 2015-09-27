@@ -105,10 +105,6 @@
 				8F7FCDEF1BB6E26600F27474 /* AppDelegate.m */,
 				8F7FCDF11BB6E26600F27474 /* ViewController.h */,
 				8F7FCDF21BB6E26600F27474 /* ViewController.m */,
-				8F7FCDF41BB6E26600F27474 /* Main.storyboard */,
-				8F7FCDF71BB6E26600F27474 /* Assets.xcassets */,
-				8F7FCDF91BB6E26600F27474 /* LaunchScreen.storyboard */,
-				8F7FCDFC1BB6E26600F27474 /* Info.plist */,
 				8F7FCDEB1BB6E26600F27474 /* Supporting Files */,
 			);
 			path = CYXBuDeJie;
@@ -117,6 +113,10 @@
 		8F7FCDEB1BB6E26600F27474 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8F7FCDFC1BB6E26600F27474 /* Info.plist */,
+				8F7FCDF91BB6E26600F27474 /* LaunchScreen.storyboard */,
+				8F7FCDF71BB6E26600F27474 /* Assets.xcassets */,
+				8F7FCDF41BB6E26600F27474 /* Main.storyboard */,
 				8F7FCDEC1BB6E26600F27474 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -496,6 +496,7 @@
 				8F7FCE171BB6E26600F27474 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8F7FCE181BB6E26600F27474 /* Build configuration list for PBXNativeTarget "CYXBuDeJieTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +505,7 @@
 				8F7FCE1A1BB6E26600F27474 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8F7FCE1B1BB6E26600F27474 /* Build configuration list for PBXNativeTarget "CYXBuDeJieUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +514,7 @@
 				8F7FCE1D1BB6E26600F27474 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
