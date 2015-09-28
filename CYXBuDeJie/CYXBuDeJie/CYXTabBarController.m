@@ -11,6 +11,7 @@
 #import "CYXFriendTrendsController.h"
 #import "CYXNewController.h"
 #import "CYXMeController.h"
+#import "CYXTabBar.h"
 
 @interface CYXTabBarController ()
 
@@ -20,20 +21,39 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // 统一设置Item的文字属性
     [self setUpItemTextAttrs];
+    
     // 添加所以子控制器
     [self setUpAllChildViewControllers];
     
-    
+    // 设置tabBar
+    [self setUpTabBar];
     
 }
 
+/**
+ *  设置tabBar
+ */
+- (void)setUpTabBar{
+    
+    [self setValue:[[CYXTabBar alloc]init] forKeyPath:@"tabBar"];
+
+}
+
+/**
+ *  统一设置Item文字的属性
+ */
 - (void)setUpItemTextAttrs{
-    //统一设置Item文字的属性
+    // 统一设置Item文字的属性
+    // 属性末尾有这个宏，UI_APPEARANCE_SELECTOR。都可以全局统一设置其属性，并在程序的每一处都显示
+    // 普通状态下
     NSMutableDictionary *normalAttrs = [NSMutableDictionary dictionary];
     normalAttrs[NSForegroundColorAttributeName] = [UIColor grayColor];
     normalAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:13];
+    
+    // 选中状态下
     NSMutableDictionary *selectAttrs = [NSMutableDictionary dictionary];
     selectAttrs[NSForegroundColorAttributeName] = [UIColor darkGrayColor];
     
@@ -42,7 +62,9 @@
     [item setTitleTextAttributes:selectAttrs forState:UIControlStateSelected];
 }
 
-
+/**
+ *  添加所有子控制器
+ */
 - (void)setUpAllChildViewControllers{
     
     CYXLog(@"%s", __func__);
@@ -61,7 +83,14 @@
 }
 
 
-//设置一个子控制器
+/**
+ *  添加一个子控制器
+ *
+ *  @param vc          控制器
+ *  @param title       标题
+ *  @param image       普通图片
+ *  @param selectImage 选中的图片
+ */
 - (void)setUpOneViewController:(UIViewController *)vc title:(NSString *)title image:(NSString *)image selectImage:(NSString *)selectImage
 {
     CYXLog(@"%s", __func__);
