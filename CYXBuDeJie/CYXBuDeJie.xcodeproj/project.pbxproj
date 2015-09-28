@@ -62,6 +62,7 @@
 		8F7FCE0C1BB6E26600F27474 /* CYXBuDeJieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CYXBuDeJieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F7FCE101BB6E26600F27474 /* CYXBuDeJieUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYXBuDeJieUITests.m; sourceTree = "<group>"; };
 		8F7FCE121BB6E26600F27474 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FA81C7F1BB962B1004E9B8F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +128,7 @@
 				8F44DD841BB93572009593DD /* CYXFriendTrendsController.m */,
 				8F44DD861BB9358E009593DD /* CYXMeController.h */,
 				8F44DD871BB9358E009593DD /* CYXMeController.m */,
+				8FA81C7F1BB962B1004E9B8F /* PrefixHeader.pch */,
 			);
 			path = CYXBuDeJie;
 			sourceTree = "<group>";
@@ -416,6 +418,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = CYXBuDeJie/PrefixHeader.pch;
 				INFOPLIST_FILE = CYXBuDeJie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ioscyx.CYXBuDeJie;
@@ -428,6 +432,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = CYXBuDeJie/PrefixHeader.pch;
 				INFOPLIST_FILE = CYXBuDeJie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ioscyx.CYXBuDeJie;

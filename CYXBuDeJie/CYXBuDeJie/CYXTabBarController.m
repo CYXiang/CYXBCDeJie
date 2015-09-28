@@ -44,6 +44,9 @@
 
 
 - (void)setUpAllChildViewControllers{
+    
+    CYXLog(@"%s", __func__);
+    
     CYXEssenceController *essence = [[CYXEssenceController alloc]init];
     [self setUpOneViewController:essence title:@"精华" image:@"tabBar_essence_icon" selectImage:@"tabBar_essence_click_icon"];
     
@@ -61,7 +64,9 @@
 //设置一个子控制器
 - (void)setUpOneViewController:(UIViewController *)vc title:(NSString *)title image:(NSString *)image selectImage:(NSString *)selectImage
 {
-    vc.view.backgroundColor = [UIColor grayColor];
+    CYXLog(@"%s", __func__);
+
+    vc.view.backgroundColor = CYXRandomColor;
     vc.tabBarItem.title = title;
     vc.tabBarItem.image = [UIImage imageNamed:image];
     vc.tabBarItem.selectedImage = [UIImage imageNamed:selectImage];
