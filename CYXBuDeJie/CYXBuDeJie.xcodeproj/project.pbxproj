@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F44DD7C1BB8ED41009593DD /* CYXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F44DD7B1BB8ED41009593DD /* CYXTabBarController.m */; settings = {ASSET_TAGS = (); }; };
+		8F44DD7F1BB92452009593DD /* CYXEssenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F44DD7E1BB92452009593DD /* CYXEssenceController.m */; settings = {ASSET_TAGS = (); }; };
+		8F44DD821BB9354B009593DD /* CYXNewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F44DD811BB9354B009593DD /* CYXNewController.m */; settings = {ASSET_TAGS = (); }; };
+		8F44DD851BB93572009593DD /* CYXFriendTrendsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F44DD841BB93572009593DD /* CYXFriendTrendsController.m */; settings = {ASSET_TAGS = (); }; };
+		8F44DD881BB9358E009593DD /* CYXMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F44DD871BB9358E009593DD /* CYXMeController.m */; settings = {ASSET_TAGS = (); }; };
 		8F7FCDED1BB6E26600F27474 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7FCDEC1BB6E26600F27474 /* main.m */; };
 		8F7FCDF01BB6E26600F27474 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7FCDEF1BB6E26600F27474 /* AppDelegate.m */; };
 		8F7FCDF31BB6E26600F27474 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7FCDF21BB6E26600F27474 /* ViewController.m */; };
-		8F7FCDF61BB6E26600F27474 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F7FCDF41BB6E26600F27474 /* Main.storyboard */; };
 		8F7FCDF81BB6E26600F27474 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F7FCDF71BB6E26600F27474 /* Assets.xcassets */; };
-		8F7FCDFB1BB6E26600F27474 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F7FCDF91BB6E26600F27474 /* LaunchScreen.storyboard */; };
 		8F7FCE061BB6E26600F27474 /* CYXBuDeJieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7FCE051BB6E26600F27474 /* CYXBuDeJieTests.m */; };
 		8F7FCE111BB6E26600F27474 /* CYXBuDeJieUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7FCE101BB6E26600F27474 /* CYXBuDeJieUITests.m */; };
 /* End PBXBuildFile section */
@@ -35,15 +38,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F44DD7A1BB8ED41009593DD /* CYXTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXTabBarController.h; sourceTree = "<group>"; };
+		8F44DD7B1BB8ED41009593DD /* CYXTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXTabBarController.m; sourceTree = "<group>"; };
+		8F44DD7D1BB92452009593DD /* CYXEssenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXEssenceController.h; sourceTree = "<group>"; };
+		8F44DD7E1BB92452009593DD /* CYXEssenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXEssenceController.m; sourceTree = "<group>"; };
+		8F44DD801BB9354B009593DD /* CYXNewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXNewController.h; sourceTree = "<group>"; };
+		8F44DD811BB9354B009593DD /* CYXNewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXNewController.m; sourceTree = "<group>"; };
+		8F44DD831BB93572009593DD /* CYXFriendTrendsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXFriendTrendsController.h; sourceTree = "<group>"; };
+		8F44DD841BB93572009593DD /* CYXFriendTrendsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXFriendTrendsController.m; sourceTree = "<group>"; };
+		8F44DD861BB9358E009593DD /* CYXMeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXMeController.h; sourceTree = "<group>"; };
+		8F44DD871BB9358E009593DD /* CYXMeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXMeController.m; sourceTree = "<group>"; };
 		8F7FCDE81BB6E26600F27474 /* CYXBuDeJie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CYXBuDeJie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F7FCDEC1BB6E26600F27474 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8F7FCDEE1BB6E26600F27474 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8F7FCDEF1BB6E26600F27474 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8F7FCDF11BB6E26600F27474 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		8F7FCDF21BB6E26600F27474 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		8F7FCDF51BB6E26600F27474 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F7FCDF71BB6E26600F27474 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8F7FCDFA1BB6E26600F27474 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F7FCDFC1BB6E26600F27474 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F7FCE011BB6E26600F27474 /* CYXBuDeJieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CYXBuDeJieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F7FCE051BB6E26600F27474 /* CYXBuDeJieTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYXBuDeJieTests.m; sourceTree = "<group>"; };
@@ -105,7 +116,17 @@
 				8F7FCDEF1BB6E26600F27474 /* AppDelegate.m */,
 				8F7FCDF11BB6E26600F27474 /* ViewController.h */,
 				8F7FCDF21BB6E26600F27474 /* ViewController.m */,
+				8F44DD7A1BB8ED41009593DD /* CYXTabBarController.h */,
+				8F44DD7B1BB8ED41009593DD /* CYXTabBarController.m */,
 				8F7FCDEB1BB6E26600F27474 /* Supporting Files */,
+				8F44DD7D1BB92452009593DD /* CYXEssenceController.h */,
+				8F44DD7E1BB92452009593DD /* CYXEssenceController.m */,
+				8F44DD801BB9354B009593DD /* CYXNewController.h */,
+				8F44DD811BB9354B009593DD /* CYXNewController.m */,
+				8F44DD831BB93572009593DD /* CYXFriendTrendsController.h */,
+				8F44DD841BB93572009593DD /* CYXFriendTrendsController.m */,
+				8F44DD861BB9358E009593DD /* CYXMeController.h */,
+				8F44DD871BB9358E009593DD /* CYXMeController.m */,
 			);
 			path = CYXBuDeJie;
 			sourceTree = "<group>";
@@ -114,9 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				8F7FCDFC1BB6E26600F27474 /* Info.plist */,
-				8F7FCDF91BB6E26600F27474 /* LaunchScreen.storyboard */,
 				8F7FCDF71BB6E26600F27474 /* Assets.xcassets */,
-				8F7FCDF41BB6E26600F27474 /* Main.storyboard */,
 				8F7FCDEC1BB6E26600F27474 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -202,6 +221,7 @@
 		8F7FCDE01BB6E26600F27474 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = CYX;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = CYX;
 				TargetAttributes = {
@@ -243,9 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F7FCDFB1BB6E26600F27474 /* LaunchScreen.storyboard in Resources */,
 				8F7FCDF81BB6E26600F27474 /* Assets.xcassets in Resources */,
-				8F7FCDF61BB6E26600F27474 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,8 +288,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F44DD7F1BB92452009593DD /* CYXEssenceController.m in Sources */,
+				8F44DD7C1BB8ED41009593DD /* CYXTabBarController.m in Sources */,
 				8F7FCDF31BB6E26600F27474 /* ViewController.m in Sources */,
+				8F44DD851BB93572009593DD /* CYXFriendTrendsController.m in Sources */,
+				8F44DD821BB9354B009593DD /* CYXNewController.m in Sources */,
 				8F7FCDF01BB6E26600F27474 /* AppDelegate.m in Sources */,
+				8F44DD881BB9358E009593DD /* CYXMeController.m in Sources */,
 				8F7FCDED1BB6E26600F27474 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,25 +329,6 @@
 			targetProxy = 8F7FCE0D1BB6E26600F27474 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		8F7FCDF41BB6E26600F27474 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8F7FCDF51BB6E26600F27474 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8F7FCDF91BB6E26600F27474 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8F7FCDFA1BB6E26600F27474 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8F7FCE131BB6E26600F27474 /* Debug */ = {
@@ -411,6 +415,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				INFOPLIST_FILE = CYXBuDeJie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ioscyx.CYXBuDeJie;
@@ -422,6 +427,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				INFOPLIST_FILE = CYXBuDeJie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ioscyx.CYXBuDeJie;
