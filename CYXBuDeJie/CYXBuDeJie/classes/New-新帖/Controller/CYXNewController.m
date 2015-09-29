@@ -16,7 +16,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    // 设置标题
+    self.navigationItem.titleView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"MainTitle"]];
+    
+    
+    // 设置左上角按钮
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithimageName:@"MainTagSubIcon" highlightImage:@"MainTagSubIconClick" target:self action:@selector(leftBtnClick) ];
+
+}
+
+- (void)leftBtnClick{
+    CYXLogFuc;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -9,6 +9,10 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
+#ifdef __OBJC__  //#ifdef __OBJC__和#endif中的内容只会出现在OC源文件中
+
+#import "UIBarButtonItem+CYXExtension.h"
+
 #ifdef DEBUG // 开发调试阶段
 #define CYXLog(...) NSLog(__VA_ARGS__)
 #else // 打包发布阶段
@@ -22,5 +26,7 @@
 #define CYXRandomColor CYXColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
 #define CYXGrayColor(v) CYXColor(v, v, v)
 
+
+#endif
 
 #endif /* PrefixHeader_pch */

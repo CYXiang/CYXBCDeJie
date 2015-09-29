@@ -16,7 +16,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    self.navigationItem.title = @"我的";
+
+    
+    UIBarButtonItem *item1 = [UIBarButtonItem itemWithimageName:@"mine-moon-icon" highlightImage:@"mine-sun-icon-click" target:self action:@selector(moonBtnClick)];
+    
+    UIBarButtonItem *item2 = [UIBarButtonItem itemWithimageName:@"mine-setting-icon" highlightImage:@"mine-setting-icon-click" target:self action:@selector(setBtnClick)];
+
+    
+    self.navigationItem.rightBarButtonItems = @[item2,item1];
+
+}
+
+- (void)moonBtnClick{
+    CYXLogFuc;
+}
+
+- (void)setBtnClick{
+    CYXLogFuc;
 }
 
 - (void)didReceiveMemoryWarning {
