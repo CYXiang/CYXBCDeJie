@@ -7,19 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8F44DD7C1BB8ED41009593DD /* CYXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F44DD7B1BB8ED41009593DD /* CYXTabBarController.m */; settings = {ASSET_TAGS = (); }; };
-		8F44DD7F1BB92452009593DD /* CYXEssenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F44DD7E1BB92452009593DD /* CYXEssenceController.m */; settings = {ASSET_TAGS = (); }; };
-		8F44DD821BB9354B009593DD /* CYXNewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F44DD811BB9354B009593DD /* CYXNewController.m */; settings = {ASSET_TAGS = (); }; };
-		8F44DD851BB93572009593DD /* CYXFriendTrendsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F44DD841BB93572009593DD /* CYXFriendTrendsController.m */; settings = {ASSET_TAGS = (); }; };
-		8F44DD881BB9358E009593DD /* CYXMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F44DD871BB9358E009593DD /* CYXMeController.m */; settings = {ASSET_TAGS = (); }; };
-		8F7FCDED1BB6E26600F27474 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7FCDEC1BB6E26600F27474 /* main.m */; };
-		8F7FCDF01BB6E26600F27474 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7FCDEF1BB6E26600F27474 /* AppDelegate.m */; };
-		8F7FCDF31BB6E26600F27474 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7FCDF21BB6E26600F27474 /* ViewController.m */; };
+		8F73297B1BBAAA840071930C /* CYXEssenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7329591BBAAA840071930C /* CYXEssenceController.m */; settings = {ASSET_TAGS = (); }; };
+		8F73297C1BBAAA840071930C /* CYXFriendTrendsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F73295F1BBAAA840071930C /* CYXFriendTrendsController.m */; settings = {ASSET_TAGS = (); }; };
+		8F73297D1BBAAA840071930C /* CYXMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7329651BBAAA840071930C /* CYXMeController.m */; settings = {ASSET_TAGS = (); }; };
+		8F73297E1BBAAA840071930C /* CYXNewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F73296B1BBAAA840071930C /* CYXNewController.m */; settings = {ASSET_TAGS = (); }; };
+		8F73297F1BBAAA840071930C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7329701BBAAA840071930C /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
+		8F7329801BBAAA840071930C /* CYXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7329741BBAAA840071930C /* CYXTabBarController.m */; settings = {ASSET_TAGS = (); }; };
+		8F7329811BBAAA840071930C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7329751BBAAA840071930C /* main.m */; settings = {ASSET_TAGS = (); }; };
+		8F7329821BBAAA840071930C /* CYXTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F73297A1BBAAA840071930C /* CYXTabBar.m */; settings = {ASSET_TAGS = (); }; };
 		8F7FCDF81BB6E26600F27474 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F7FCDF71BB6E26600F27474 /* Assets.xcassets */; };
 		8F7FCE061BB6E26600F27474 /* CYXBuDeJieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7FCE051BB6E26600F27474 /* CYXBuDeJieTests.m */; };
 		8F7FCE111BB6E26600F27474 /* CYXBuDeJieUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7FCE101BB6E26600F27474 /* CYXBuDeJieUITests.m */; };
-		8FA81C821BB9694C004E9B8F /* CYXTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA81C811BB9694C004E9B8F /* CYXTabBar.m */; settings = {ASSET_TAGS = (); }; };
-		8FC7215C1BB98DCF00ABA40E /* CYXSendTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC7215B1BB98DCF00ABA40E /* CYXSendTestController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,22 +38,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8F44DD7A1BB8ED41009593DD /* CYXTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXTabBarController.h; sourceTree = "<group>"; };
-		8F44DD7B1BB8ED41009593DD /* CYXTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXTabBarController.m; sourceTree = "<group>"; };
-		8F44DD7D1BB92452009593DD /* CYXEssenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXEssenceController.h; sourceTree = "<group>"; };
-		8F44DD7E1BB92452009593DD /* CYXEssenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXEssenceController.m; sourceTree = "<group>"; };
-		8F44DD801BB9354B009593DD /* CYXNewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXNewController.h; sourceTree = "<group>"; };
-		8F44DD811BB9354B009593DD /* CYXNewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXNewController.m; sourceTree = "<group>"; };
-		8F44DD831BB93572009593DD /* CYXFriendTrendsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXFriendTrendsController.h; sourceTree = "<group>"; };
-		8F44DD841BB93572009593DD /* CYXFriendTrendsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXFriendTrendsController.m; sourceTree = "<group>"; };
-		8F44DD861BB9358E009593DD /* CYXMeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXMeController.h; sourceTree = "<group>"; };
-		8F44DD871BB9358E009593DD /* CYXMeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXMeController.m; sourceTree = "<group>"; };
+		8F7329581BBAAA840071930C /* CYXEssenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXEssenceController.h; sourceTree = "<group>"; };
+		8F7329591BBAAA840071930C /* CYXEssenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXEssenceController.m; sourceTree = "<group>"; };
+		8F73295E1BBAAA840071930C /* CYXFriendTrendsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXFriendTrendsController.h; sourceTree = "<group>"; };
+		8F73295F1BBAAA840071930C /* CYXFriendTrendsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXFriendTrendsController.m; sourceTree = "<group>"; };
+		8F7329641BBAAA840071930C /* CYXMeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXMeController.h; sourceTree = "<group>"; };
+		8F7329651BBAAA840071930C /* CYXMeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXMeController.m; sourceTree = "<group>"; };
+		8F73296A1BBAAA840071930C /* CYXNewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXNewController.h; sourceTree = "<group>"; };
+		8F73296B1BBAAA840071930C /* CYXNewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXNewController.m; sourceTree = "<group>"; };
+		8F73296F1BBAAA840071930C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8F7329701BBAAA840071930C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8F7329731BBAAA840071930C /* CYXTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXTabBarController.h; sourceTree = "<group>"; };
+		8F7329741BBAAA840071930C /* CYXTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXTabBarController.m; sourceTree = "<group>"; };
+		8F7329751BBAAA840071930C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8F7329771BBAAA840071930C /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		8F7329791BBAAA840071930C /* CYXTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXTabBar.h; sourceTree = "<group>"; };
+		8F73297A1BBAAA840071930C /* CYXTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXTabBar.m; sourceTree = "<group>"; };
 		8F7FCDE81BB6E26600F27474 /* CYXBuDeJie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CYXBuDeJie.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F7FCDEC1BB6E26600F27474 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8F7FCDEE1BB6E26600F27474 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		8F7FCDEF1BB6E26600F27474 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8F7FCDF11BB6E26600F27474 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8F7FCDF21BB6E26600F27474 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8F7FCDF71BB6E26600F27474 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F7FCDFC1BB6E26600F27474 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F7FCE011BB6E26600F27474 /* CYXBuDeJieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CYXBuDeJieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,11 +63,6 @@
 		8F7FCE0C1BB6E26600F27474 /* CYXBuDeJieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CYXBuDeJieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F7FCE101BB6E26600F27474 /* CYXBuDeJieUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYXBuDeJieUITests.m; sourceTree = "<group>"; };
 		8F7FCE121BB6E26600F27474 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8FA81C7F1BB962B1004E9B8F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		8FA81C801BB9694C004E9B8F /* CYXTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXTabBar.h; sourceTree = "<group>"; };
-		8FA81C811BB9694C004E9B8F /* CYXTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXTabBar.m; sourceTree = "<group>"; };
-		8FC7215A1BB98DCF00ABA40E /* CYXSendTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXSendTestController.h; sourceTree = "<group>"; };
-		8FC7215B1BB98DCF00ABA40E /* CYXSendTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXSendTestController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +90,197 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F7329551BBAAA840071930C /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				8F7329561BBAAA840071930C /* Essence-精华 */,
+				8F73295C1BBAAA840071930C /* FriendTrends-关注 */,
+				8F7329621BBAAA840071930C /* Me-我的 */,
+				8F7329681BBAAA840071930C /* New-新帖 */,
+				8F73296E1BBAAA840071930C /* other */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		8F7329561BBAAA840071930C /* Essence-精华 */ = {
+			isa = PBXGroup;
+			children = (
+				8F7329571BBAAA840071930C /* Controller */,
+				8F73295A1BBAAA840071930C /* Model */,
+				8F73295B1BBAAA840071930C /* View */,
+			);
+			path = "Essence-精华";
+			sourceTree = "<group>";
+		};
+		8F7329571BBAAA840071930C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8F7329581BBAAA840071930C /* CYXEssenceController.h */,
+				8F7329591BBAAA840071930C /* CYXEssenceController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8F73295A1BBAAA840071930C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8F73295B1BBAAA840071930C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8F73295C1BBAAA840071930C /* FriendTrends-关注 */ = {
+			isa = PBXGroup;
+			children = (
+				8F73295D1BBAAA840071930C /* Controller */,
+				8F7329601BBAAA840071930C /* Model */,
+				8F7329611BBAAA840071930C /* View */,
+			);
+			path = "FriendTrends-关注";
+			sourceTree = "<group>";
+		};
+		8F73295D1BBAAA840071930C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8F73295E1BBAAA840071930C /* CYXFriendTrendsController.h */,
+				8F73295F1BBAAA840071930C /* CYXFriendTrendsController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8F7329601BBAAA840071930C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8F7329611BBAAA840071930C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8F7329621BBAAA840071930C /* Me-我的 */ = {
+			isa = PBXGroup;
+			children = (
+				8F7329631BBAAA840071930C /* Controller */,
+				8F7329661BBAAA840071930C /* Model */,
+				8F7329671BBAAA840071930C /* View */,
+			);
+			path = "Me-我的";
+			sourceTree = "<group>";
+		};
+		8F7329631BBAAA840071930C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8F7329641BBAAA840071930C /* CYXMeController.h */,
+				8F7329651BBAAA840071930C /* CYXMeController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8F7329661BBAAA840071930C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8F7329671BBAAA840071930C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8F7329681BBAAA840071930C /* New-新帖 */ = {
+			isa = PBXGroup;
+			children = (
+				8F7329691BBAAA840071930C /* Controller */,
+				8F73296C1BBAAA840071930C /* Model */,
+				8F73296D1BBAAA840071930C /* View */,
+			);
+			path = "New-新帖";
+			sourceTree = "<group>";
+		};
+		8F7329691BBAAA840071930C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8F73296A1BBAAA840071930C /* CYXNewController.h */,
+				8F73296B1BBAAA840071930C /* CYXNewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8F73296C1BBAAA840071930C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8F73296D1BBAAA840071930C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8F73296E1BBAAA840071930C /* other */ = {
+			isa = PBXGroup;
+			children = (
+				8F73296F1BBAAA840071930C /* AppDelegate.h */,
+				8F7329701BBAAA840071930C /* AppDelegate.m */,
+				8F7329711BBAAA840071930C /* Category */,
+				8F7329721BBAAA840071930C /* Controller */,
+				8F7329751BBAAA840071930C /* main.m */,
+				8F7329761BBAAA840071930C /* Model */,
+				8F7329771BBAAA840071930C /* PrefixHeader.pch */,
+				8F7329781BBAAA840071930C /* View */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		8F7329711BBAAA840071930C /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		8F7329721BBAAA840071930C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8F7329731BBAAA840071930C /* CYXTabBarController.h */,
+				8F7329741BBAAA840071930C /* CYXTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8F7329761BBAAA840071930C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8F7329781BBAAA840071930C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8F7329791BBAAA840071930C /* CYXTabBar.h */,
+				8F73297A1BBAAA840071930C /* CYXTabBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		8F7FCDDF1BB6E26600F27474 = {
 			isa = PBXGroup;
 			children = (
@@ -119,26 +304,8 @@
 		8F7FCDEA1BB6E26600F27474 /* CYXBuDeJie */ = {
 			isa = PBXGroup;
 			children = (
-				8F7FCDEE1BB6E26600F27474 /* AppDelegate.h */,
-				8F7FCDEF1BB6E26600F27474 /* AppDelegate.m */,
-				8F7FCDF11BB6E26600F27474 /* ViewController.h */,
-				8F7FCDF21BB6E26600F27474 /* ViewController.m */,
-				8F44DD7A1BB8ED41009593DD /* CYXTabBarController.h */,
-				8F44DD7B1BB8ED41009593DD /* CYXTabBarController.m */,
+				8F7329551BBAAA840071930C /* classes */,
 				8F7FCDEB1BB6E26600F27474 /* Supporting Files */,
-				8F44DD7D1BB92452009593DD /* CYXEssenceController.h */,
-				8F44DD7E1BB92452009593DD /* CYXEssenceController.m */,
-				8F44DD801BB9354B009593DD /* CYXNewController.h */,
-				8F44DD811BB9354B009593DD /* CYXNewController.m */,
-				8F44DD831BB93572009593DD /* CYXFriendTrendsController.h */,
-				8F44DD841BB93572009593DD /* CYXFriendTrendsController.m */,
-				8F44DD861BB9358E009593DD /* CYXMeController.h */,
-				8F44DD871BB9358E009593DD /* CYXMeController.m */,
-				8FA81C7F1BB962B1004E9B8F /* PrefixHeader.pch */,
-				8FA81C801BB9694C004E9B8F /* CYXTabBar.h */,
-				8FA81C811BB9694C004E9B8F /* CYXTabBar.m */,
-				8FC7215A1BB98DCF00ABA40E /* CYXSendTestController.h */,
-				8FC7215B1BB98DCF00ABA40E /* CYXSendTestController.m */,
 			);
 			path = CYXBuDeJie;
 			sourceTree = "<group>";
@@ -148,7 +315,6 @@
 			children = (
 				8F7FCDFC1BB6E26600F27474 /* Info.plist */,
 				8F7FCDF71BB6E26600F27474 /* Assets.xcassets */,
-				8F7FCDEC1BB6E26600F27474 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -300,16 +466,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F44DD7F1BB92452009593DD /* CYXEssenceController.m in Sources */,
-				8FA81C821BB9694C004E9B8F /* CYXTabBar.m in Sources */,
-				8F44DD7C1BB8ED41009593DD /* CYXTabBarController.m in Sources */,
-				8F7FCDF31BB6E26600F27474 /* ViewController.m in Sources */,
-				8FC7215C1BB98DCF00ABA40E /* CYXSendTestController.m in Sources */,
-				8F44DD851BB93572009593DD /* CYXFriendTrendsController.m in Sources */,
-				8F44DD821BB9354B009593DD /* CYXNewController.m in Sources */,
-				8F7FCDF01BB6E26600F27474 /* AppDelegate.m in Sources */,
-				8F44DD881BB9358E009593DD /* CYXMeController.m in Sources */,
-				8F7FCDED1BB6E26600F27474 /* main.m in Sources */,
+				8F73297C1BBAAA840071930C /* CYXFriendTrendsController.m in Sources */,
+				8F73297D1BBAAA840071930C /* CYXMeController.m in Sources */,
+				8F73297B1BBAAA840071930C /* CYXEssenceController.m in Sources */,
+				8F73297E1BBAAA840071930C /* CYXNewController.m in Sources */,
+				8F7329801BBAAA840071930C /* CYXTabBarController.m in Sources */,
+				8F7329811BBAAA840071930C /* main.m in Sources */,
+				8F7329821BBAAA840071930C /* CYXTabBar.m in Sources */,
+				8F73297F1BBAAA840071930C /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,7 +595,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = CYXBuDeJie/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = CYXBuDeJie/classes/other/PrefixHeader.pch;
 				INFOPLIST_FILE = CYXBuDeJie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ioscyx.CYXBuDeJie;
@@ -445,7 +609,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = CYXBuDeJie/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = CYXBuDeJie/classes/other/PrefixHeader.pch;
 				INFOPLIST_FILE = CYXBuDeJie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ioscyx.CYXBuDeJie;
