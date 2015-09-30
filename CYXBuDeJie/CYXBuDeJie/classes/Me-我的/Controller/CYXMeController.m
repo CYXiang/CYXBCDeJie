@@ -7,6 +7,7 @@
 //
 
 #import "CYXMeController.h"
+#import "CYXSettingViewController.h"
 
 @interface CYXMeController ()
 
@@ -16,16 +17,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    // 设置标题
     self.navigationItem.title = @"我的";
 
-    
+    // 设置右上角的按钮
     UIBarButtonItem *item1 = [UIBarButtonItem itemWithimageName:@"mine-moon-icon" highlightImage:@"mine-sun-icon-click" target:self action:@selector(moonBtnClick)];
     
     UIBarButtonItem *item2 = [UIBarButtonItem itemWithimageName:@"mine-setting-icon" highlightImage:@"mine-setting-icon-click" target:self action:@selector(setBtnClick)];
 
     
     self.navigationItem.rightBarButtonItems = @[item2,item1];
+    
 
 }
 
@@ -33,8 +35,15 @@
     CYXLogFuc;
 }
 
+/**
+ *  设置按钮的点击事件
+ */
 - (void)setBtnClick{
-    CYXLogFuc;
+    
+    CYXSettingViewController *setVC = [[CYXSettingViewController alloc]init];
+    
+    [self.navigationController pushViewController:setVC animated:YES];
+
 }
 
 - (void)didReceiveMemoryWarning {

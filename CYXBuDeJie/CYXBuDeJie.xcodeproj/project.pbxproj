@@ -19,6 +19,9 @@
 		8F7FCDF81BB6E26600F27474 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F7FCDF71BB6E26600F27474 /* Assets.xcassets */; };
 		8F7FCE061BB6E26600F27474 /* CYXBuDeJieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7FCE051BB6E26600F27474 /* CYXBuDeJieTests.m */; };
 		8F7FCE111BB6E26600F27474 /* CYXBuDeJieUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7FCE101BB6E26600F27474 /* CYXBuDeJieUITests.m */; };
+		8FDF2A281BBC27FE0083DB4F /* CYXSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDF2A271BBC27FE0083DB4F /* CYXSettingViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8FDF2A2A1BBC2B930083DB4F /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FDF2A291BBC2B930083DB4F /* Test.storyboard */; settings = {ASSET_TAGS = (); }; };
+		8FDF2A2D1BBC31140083DB4F /* CYXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDF2A2C1BBC31140083DB4F /* CYXNavigationController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +69,11 @@
 		8F7FCE0C1BB6E26600F27474 /* CYXBuDeJieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CYXBuDeJieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F7FCE101BB6E26600F27474 /* CYXBuDeJieUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYXBuDeJieUITests.m; sourceTree = "<group>"; };
 		8F7FCE121BB6E26600F27474 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FDF2A261BBC27FE0083DB4F /* CYXSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXSettingViewController.h; sourceTree = "<group>"; };
+		8FDF2A271BBC27FE0083DB4F /* CYXSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXSettingViewController.m; sourceTree = "<group>"; };
+		8FDF2A291BBC2B930083DB4F /* Test.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
+		8FDF2A2B1BBC31140083DB4F /* CYXNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXNavigationController.h; sourceTree = "<group>"; };
+		8FDF2A2C1BBC31140083DB4F /* CYXNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +194,9 @@
 			children = (
 				8F7329641BBAAA840071930C /* CYXMeController.h */,
 				8F7329651BBAAA840071930C /* CYXMeController.m */,
+				8FDF2A261BBC27FE0083DB4F /* CYXSettingViewController.h */,
+				8FDF2A271BBC27FE0083DB4F /* CYXSettingViewController.m */,
+				8FDF2A291BBC2B930083DB4F /* Test.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -266,6 +277,8 @@
 			children = (
 				8F7329731BBAAA840071930C /* CYXTabBarController.h */,
 				8F7329741BBAAA840071930C /* CYXTabBarController.m */,
+				8FDF2A2B1BBC31140083DB4F /* CYXNavigationController.h */,
+				8FDF2A2C1BBC31140083DB4F /* CYXNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -447,6 +460,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F7FCDF81BB6E26600F27474 /* Assets.xcassets in Resources */,
+				8FDF2A2A1BBC2B930083DB4F /* Test.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,12 +485,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FDF2A2D1BBC31140083DB4F /* CYXNavigationController.m in Sources */,
 				8F73297C1BBAAA840071930C /* CYXFriendTrendsController.m in Sources */,
 				8F73297D1BBAAA840071930C /* CYXMeController.m in Sources */,
 				8F7329851BBAB40D0071930C /* UIBarButtonItem+CYXExtension.m in Sources */,
 				8F73297B1BBAAA840071930C /* CYXEssenceController.m in Sources */,
 				8F73297E1BBAAA840071930C /* CYXNewController.m in Sources */,
 				8F7329801BBAAA840071930C /* CYXTabBarController.m in Sources */,
+				8FDF2A281BBC27FE0083DB4F /* CYXSettingViewController.m in Sources */,
 				8F7329811BBAAA840071930C /* main.m in Sources */,
 				8F7329821BBAAA840071930C /* CYXTabBar.m in Sources */,
 				8F73297F1BBAAA840071930C /* AppDelegate.m in Sources */,
