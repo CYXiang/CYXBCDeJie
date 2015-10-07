@@ -17,6 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.view.backgroundColor = CYXCommonBgColor;
+
     // 设置标题
     self.navigationItem.title = @"我的";
 
@@ -43,6 +46,7 @@
     CYXSettingViewController *setVC = [[CYXSettingViewController alloc]init];
     
     [self.navigationController pushViewController:setVC animated:YES];
+    
 
 }
 

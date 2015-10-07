@@ -8,10 +8,10 @@
 
 #import "CYXTabBarController.h"
 #import "CYXEssenceController.h"
-#import "CYXFriendTrendsController.h"
 #import "CYXNewController.h"
 #import "CYXMeController.h"
 #import "CYXTabBar.h"
+#import "CYXTestViewController.h"
 
 #import "CYXNavigationController.h"
 
@@ -71,17 +71,32 @@
     
     CYXLogFuc;
     
+
+    
+//    [self setUpOneViewController:[[CYXNavigationController alloc]initWithRootViewController:[[CYXFriendTrendsController alloc]init]] title:@"关注" image:@"tabBar_friendTrends_icon" selectImage:@"tabBar_friendTrends_click_icon"];
+    
     // 添加第一个子控制器
     [self setUpOneViewController:[[CYXNavigationController alloc]initWithRootViewController:[[CYXEssenceController alloc]init]] title:@"精华" image:@"tabBar_essence_icon" selectImage:@"tabBar_essence_click_icon"];
     
     // 添加第二个子控制器
     [self setUpOneViewController:[[CYXNavigationController alloc]initWithRootViewController:[[CYXNewController alloc]init]] title:@"新帖" image:@"tabBar_new_icon" selectImage:@"tabBar_new_click_icon"];
     
-    // 添加第三个子控制器
-    [self setUpOneViewController:[[CYXNavigationController alloc]initWithRootViewController:[[CYXFriendTrendsController alloc]init]] title:@"关注" image:@"tabBar_friendTrends_icon" selectImage:@"tabBar_friendTrends_click_icon"];
+
 
     // 添加第四个子控制器
     [self setUpOneViewController:[[CYXNavigationController alloc]initWithRootViewController:[[CYXMeController alloc]init]]  title:@"我" image:@"tabBar_me_icon" selectImage:@"tabBar_me_click_icon"];
+    
+    CYXTestViewController *vc = [UIStoryboard storyboardWithName:@"CYXTestViewController" bundle:nil].instantiateInitialViewController;
+    
+     [self setUpOneViewController:[[CYXNavigationController alloc]initWithRootViewController:vc] title:@"关注" image:@"tabBar_friendTrends_icon" selectImage:@"tabBar_friendTrends_click_icon"];
+    
+    // 添加第三个子控制器
+//    CYXFriendTrendsController * friendTrends = [UIStoryboard storyboardWithName:NSStringFromClass([CYXFriendTrendsController class]) bundle:nil].instantiateInitialViewController;
+//    
+//    
+//    [self setUpOneViewController:[[CYXNavigationController alloc]initWithRootViewController:friendTrends] title:@"关注" image:@"tabBar_friendTrends_icon" selectImage:@"tabBar_friendTrends_click_icon"];
+    
+    
 }
 
 
@@ -96,8 +111,7 @@
 - (void)setUpOneViewController:(UIViewController *)vc title:(NSString *)title image:(NSString *)image selectImage:(NSString *)selectImage
 {
     CYXLog(@"%s", __func__);
-
-    vc.view.backgroundColor = CYXRandomColor;
+//    vc.view.backgroundColor = CYXRandomColor;
     vc.tabBarItem.title = title;
     vc.tabBarItem.image = [UIImage imageNamed:image];
     vc.tabBarItem.selectedImage = [UIImage imageNamed:selectImage];
