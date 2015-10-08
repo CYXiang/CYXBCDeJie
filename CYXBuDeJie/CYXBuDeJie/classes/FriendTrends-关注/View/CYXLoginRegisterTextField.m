@@ -23,6 +23,7 @@
     
 }
 
+
 - (void)editingDidBegin{
     // KVC
     [self setValue:[UIColor whiteColor] forKeyPath:@"placeholderLabel.textColor"];

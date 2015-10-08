@@ -37,6 +37,8 @@
 - (IBAction)backToFriendTrendsViewController:(UIStoryboardSegue *)segue{
     
     CYXLog(@"从%@控制器来的",segue.sourceViewController);
+    
+    
 }
 
 /*

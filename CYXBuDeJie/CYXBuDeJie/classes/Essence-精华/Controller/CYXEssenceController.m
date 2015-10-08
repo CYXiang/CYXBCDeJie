@@ -7,6 +7,7 @@
 //
 
 #import "CYXEssenceController.h"
+#import "CYXRecommandTagViewController.h"
 
 
 @interface CYXEssenceController ()
@@ -33,7 +34,10 @@
 
 
 - (void)mainBtnClick{
-    CYXLogFuc;
+    
+    CYXRecommandTagViewController *tag = [[CYXRecommandTagViewController alloc]init];
+
+    [self.navigationController pushViewController:tag animated:YES];
 }
 
 @end
