@@ -8,6 +8,8 @@
 
 #import "CYXRecommandTagViewController.h"
 #import "CYXRecommandTagCell.h"
+#import <AFNetworking.h>
+#import <MJExtension.h>
 
 @interface CYXRecommandTagViewController ()
 
@@ -21,7 +23,31 @@
   
     self.tableView.rowHeight = 70;
     
-[self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([CYXRecommandTagCell class]) bundle:nil] forCellReuseIdentifier:@"recommandTag"];
+    [self loadNewRecommandTags];
+    
+    // 注册可重用TableViewCell
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([CYXRecommandTagCell class]) bundle:nil] forCellReuseIdentifier:@"recommandTag"];
+}
+
+/**
+ *  发送请求的方法
+ */
+- (void)loadNewRecommandTags{
+
+    NSString *url = @"http://api.budejie.com/api/api_open.php";
+    
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"a"] = @"tag_recommend";
+    params[@"action"] = @"sub";
+    params[@"c"] = @"topic";
+    
+    [[AFHTTPSessionManager manager] GET:url parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+        CYXLog(@"成功");
+        CYXLog(@"%@",responseObject);
+    } failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
+        CYXLog(@"失败");
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning {
