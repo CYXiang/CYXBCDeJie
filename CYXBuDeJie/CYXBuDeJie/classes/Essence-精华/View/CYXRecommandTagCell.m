@@ -33,6 +33,7 @@
     
     self.themeNameLable.text = reaommandTag.theme_name;
     
+    // 订阅数
     if (reaommandTag.sub_number >= 10000) {
         self.subNumberLable.text = [NSString stringWithFormat:@"%.1f万人订阅",reaommandTag.sub_number / 10000.0];
     }else{
@@ -42,6 +43,9 @@
 
 }
 
+/**
+ *  重写setFrame的作用：监听设置Cell的frame设置过程
+ */
 - (void)setFrame:(CGRect)frame{
     
     frame.size.height -= 1;
