@@ -8,10 +8,14 @@
 
 #import "CYXRecommandTagViewController.h"
 #import "CYXRecommandTagCell.h"
+#import "CYXReaommandTag.h"
 #import <AFNetworking.h>
 #import <MJExtension.h>
 
 @interface CYXRecommandTagViewController ()
+
+/** 所有的标签数据 */
+@property (strong, nonatomic) NSArray * recommandTags;
 
 @end
 
@@ -23,6 +27,11 @@
   
     self.tableView.rowHeight = 70;
     
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    self.tableView.backgroundColor = CYXCommonBgColor;
+    
+    // 到服务器加载标签
     [self loadNewRecommandTags];
     
     // 注册可重用TableViewCell
@@ -44,6 +53,10 @@
     [[AFHTTPSessionManager manager] GET:url parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
         CYXLog(@"成功");
         CYXLog(@"%@",responseObject);
+        self.recommandTags = [CYXReaommandTag objectArrayWithKeyValuesArray:responseObject];
+        CYXLog(@"%@",self.recommandTags);
+        
+        [self.tableView reloadData];
     } failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
         CYXLog(@"失败");
     }];
@@ -60,14 +73,15 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return 20;
+    return self.recommandTags.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"recommandTag"];
     
-    // Configure the cell...
+    CYXRecommandTagCell *cell = [tableView dequeueReusableCellWithIdentifier:@"recommandTag"];
+    
+    cell.reaommandTag = self.recommandTags[indexPath.row];
     
     return cell;
 }

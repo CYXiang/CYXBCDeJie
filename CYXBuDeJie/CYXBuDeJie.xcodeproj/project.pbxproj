@@ -30,6 +30,7 @@
 		8FDF2A2D1BBC31140083DB4F /* CYXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDF2A2C1BBC31140083DB4F /* CYXNavigationController.m */; };
 		8FEDB1E81BBEE30C00E8D3BC /* UIView+CYXFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEDB1E71BBEE30C00E8D3BC /* UIView+CYXFrame.m */; };
 		8FEDB1EB1BBEE36500E8D3BC /* CYXQuickLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEDB1EA1BBEE36500E8D3BC /* CYXQuickLoginButton.m */; };
+		8FF432AB1BC6E6390056F4FF /* CYXReaommandTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF432AA1BC6E6390056F4FF /* CYXReaommandTag.m */; settings = {ASSET_TAGS = (); }; };
 		B01AD61A2E99CA66BECFCDC6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B3D50366C1542ED7E28CB4 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +101,8 @@
 		8FEDB1E71BBEE30C00E8D3BC /* UIView+CYXFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CYXFrame.m"; sourceTree = "<group>"; };
 		8FEDB1E91BBEE36500E8D3BC /* CYXQuickLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXQuickLoginButton.h; sourceTree = "<group>"; };
 		8FEDB1EA1BBEE36500E8D3BC /* CYXQuickLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXQuickLoginButton.m; sourceTree = "<group>"; };
+		8FF432A91BC6E6390056F4FF /* CYXReaommandTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXReaommandTag.h; sourceTree = "<group>"; };
+		8FF432AA1BC6E6390056F4FF /* CYXReaommandTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXReaommandTag.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +176,8 @@
 		8F73295A1BBAAA840071930C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8FF432A91BC6E6390056F4FF /* CYXReaommandTag.h */,
+				8FF432AA1BC6E6390056F4FF /* CYXReaommandTag.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -588,6 +593,7 @@
 				8F73297D1BBAAA840071930C /* CYXMeController.m in Sources */,
 				8FBD8B591BC693AB007AE903 /* CYXRecommandTagCell.m in Sources */,
 				8F7329851BBAB40D0071930C /* UIBarButtonItem+CYXExtension.m in Sources */,
+				8FF432AB1BC6E6390056F4FF /* CYXReaommandTag.m in Sources */,
 				8F191EBC1BBDB53F00C75CF6 /* CYXLoginViewController.m in Sources */,
 				8F73297B1BBAAA840071930C /* CYXEssenceController.m in Sources */,
 				8F73297E1BBAAA840071930C /* CYXNewController.m in Sources */,

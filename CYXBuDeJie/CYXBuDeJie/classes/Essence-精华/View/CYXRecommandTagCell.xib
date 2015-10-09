@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <objects>
@@ -53,6 +52,11 @@
                     <constraint firstItem="YXT-DK-WTP" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="sKq-Yf-SX2"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="imageListView" destination="Rsm-JI-7ES" id="lli-js-rEG"/>
+                <outlet property="subNumberLable" destination="HfW-Ez-cQp" id="G3W-XI-gz2"/>
+                <outlet property="themeNameLable" destination="Yak-Wn-T9h" id="mDz-33-uku"/>
+            </connections>
             <point key="canvasLocation" x="251.5" y="262"/>
         </tableViewCell>
     </objects>
