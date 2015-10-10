@@ -19,7 +19,30 @@
 
 @end
 
+/*
+ 1.定义一个[只能在当前文件访问]的[全局常量]
+ 1> static 类型 const 常量名 = 初始化值;
+ 
+ 2.定义一个[整个项目都能访问]的[全局常量]
+ 1> 新建2个文件
+ a) 1个.h\1个.m
+ b) 比如XMGConst.h和XMGConst.m
+ 2> 在XMGConst.h和XMGConst.m中包含UIKit
+ a) #import <UIKit/UIKit.h>
+ 3> 在XMGConst.m定义常量值
+ a) 类型 const 常量名 = 初始化值;
+ 4> 在XMGConst.h引用常量
+ a) UIKIT_EXTERN 类型 const 常量名;
+ 5) 在pch文件中包含XMGConst.h
+ a) #import "XMGConst.h"
+ */
+
+// cell的重用标识
+static NSString * const CYXRecommandCellID = @"recommandTag";
+
 @implementation CYXRecommandTagViewController
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -35,7 +58,7 @@
     [self loadNewRecommandTags];
     
     // 注册可重用TableViewCell
-    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([CYXRecommandTagCell class]) bundle:nil] forCellReuseIdentifier:@"recommandTag"];
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([CYXRecommandTagCell class]) bundle:nil] forCellReuseIdentifier:CYXRecommandCellID];
 }
 
 /**
@@ -43,7 +66,7 @@
  */
 - (void)loadNewRecommandTags{
 
-    NSString *url = @"http://api.budejie.com/api/api_open.php";
+    NSString *url = CYXRequestURL;
     
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"] = @"tag_recommend";
@@ -79,7 +102,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    CYXRecommandTagCell *cell = [tableView dequeueReusableCellWithIdentifier:@"recommandTag"];
+    CYXRecommandTagCell *cell = [tableView dequeueReusableCellWithIdentifier:CYXRecommandCellID];
     
     cell.reaommandTag = self.recommandTags[indexPath.row];
     

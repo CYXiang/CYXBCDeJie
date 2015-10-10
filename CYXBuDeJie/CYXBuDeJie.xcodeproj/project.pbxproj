@@ -22,6 +22,9 @@
 		8F7FCDF81BB6E26600F27474 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F7FCDF71BB6E26600F27474 /* Assets.xcassets */; };
 		8F7FCE061BB6E26600F27474 /* CYXBuDeJieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7FCE051BB6E26600F27474 /* CYXBuDeJieTests.m */; };
 		8F7FCE111BB6E26600F27474 /* CYXBuDeJieUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7FCE101BB6E26600F27474 /* CYXBuDeJieUITests.m */; };
+		8F8D0F781BC8A3B0004300C5 /* NSObject+CYXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8D0F771BC8A3B0004300C5 /* NSObject+CYXExtension.m */; settings = {ASSET_TAGS = (); }; };
+		8F8D0F7B1BC8A83B004300C5 /* UITextField+CYXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8D0F7A1BC8A83B004300C5 /* UITextField+CYXExtension.m */; settings = {ASSET_TAGS = (); }; };
+		8F8D0F811BC8BA51004300C5 /* CYXConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8D0F801BC8BA51004300C5 /* CYXConst.m */; settings = {ASSET_TAGS = (); }; };
 		8FBD8B551BC692C6007AE903 /* CYXRecommandTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FBD8B541BC692C6007AE903 /* CYXRecommandTagViewController.m */; settings = {ASSET_TAGS = (); }; };
 		8FBD8B591BC693AB007AE903 /* CYXRecommandTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FBD8B571BC693AB007AE903 /* CYXRecommandTagCell.m */; settings = {ASSET_TAGS = (); }; };
 		8FBD8B5A1BC693AB007AE903 /* CYXRecommandTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FBD8B581BC693AB007AE903 /* CYXRecommandTagCell.xib */; settings = {ASSET_TAGS = (); }; };
@@ -87,6 +90,12 @@
 		8F7FCE0C1BB6E26600F27474 /* CYXBuDeJieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CYXBuDeJieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F7FCE101BB6E26600F27474 /* CYXBuDeJieUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYXBuDeJieUITests.m; sourceTree = "<group>"; };
 		8F7FCE121BB6E26600F27474 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F8D0F761BC8A3B0004300C5 /* NSObject+CYXExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CYXExtension.h"; sourceTree = "<group>"; };
+		8F8D0F771BC8A3B0004300C5 /* NSObject+CYXExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CYXExtension.m"; sourceTree = "<group>"; };
+		8F8D0F791BC8A83B004300C5 /* UITextField+CYXExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+CYXExtension.h"; sourceTree = "<group>"; };
+		8F8D0F7A1BC8A83B004300C5 /* UITextField+CYXExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+CYXExtension.m"; sourceTree = "<group>"; };
+		8F8D0F7F1BC8BA51004300C5 /* CYXConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXConst.h; sourceTree = "<group>"; };
+		8F8D0F801BC8BA51004300C5 /* CYXConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXConst.m; sourceTree = "<group>"; };
 		8FBD8B531BC692C6007AE903 /* CYXRecommandTagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXRecommandTagViewController.h; sourceTree = "<group>"; };
 		8FBD8B541BC692C6007AE903 /* CYXRecommandTagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXRecommandTagViewController.m; sourceTree = "<group>"; };
 		8FBD8B561BC693AB007AE903 /* CYXRecommandTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXRecommandTagCell.h; sourceTree = "<group>"; };
@@ -304,14 +313,16 @@
 		8F73296E1BBAAA840071930C /* other */ = {
 			isa = PBXGroup;
 			children = (
+				8F7329711BBAAA840071930C /* Category */,
+				8F7329781BBAAA840071930C /* View */,
+				8F7329761BBAAA840071930C /* Model */,
+				8F7329721BBAAA840071930C /* Controller */,
 				8F73296F1BBAAA840071930C /* AppDelegate.h */,
 				8F7329701BBAAA840071930C /* AppDelegate.m */,
-				8F7329711BBAAA840071930C /* Category */,
-				8F7329721BBAAA840071930C /* Controller */,
 				8F7329751BBAAA840071930C /* main.m */,
-				8F7329761BBAAA840071930C /* Model */,
 				8F7329771BBAAA840071930C /* PrefixHeader.pch */,
-				8F7329781BBAAA840071930C /* View */,
+				8F8D0F7F1BC8BA51004300C5 /* CYXConst.h */,
+				8F8D0F801BC8BA51004300C5 /* CYXConst.m */,
 			);
 			path = other;
 			sourceTree = "<group>";
@@ -323,6 +334,10 @@
 				8F7329841BBAB40D0071930C /* UIBarButtonItem+CYXExtension.m */,
 				8FEDB1E61BBEE30C00E8D3BC /* UIView+CYXFrame.h */,
 				8FEDB1E71BBEE30C00E8D3BC /* UIView+CYXFrame.m */,
+				8F8D0F791BC8A83B004300C5 /* UITextField+CYXExtension.h */,
+				8F8D0F7A1BC8A83B004300C5 /* UITextField+CYXExtension.m */,
+				8F8D0F761BC8A3B0004300C5 /* NSObject+CYXExtension.h */,
+				8F8D0F771BC8A3B0004300C5 /* NSObject+CYXExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -597,7 +612,10 @@
 				8F191EBC1BBDB53F00C75CF6 /* CYXLoginViewController.m in Sources */,
 				8F73297B1BBAAA840071930C /* CYXEssenceController.m in Sources */,
 				8F73297E1BBAAA840071930C /* CYXNewController.m in Sources */,
+				8F8D0F811BC8BA51004300C5 /* CYXConst.m in Sources */,
+				8F8D0F781BC8A3B0004300C5 /* NSObject+CYXExtension.m in Sources */,
 				8F7329801BBAAA840071930C /* CYXTabBarController.m in Sources */,
+				8F8D0F7B1BC8A83B004300C5 /* UITextField+CYXExtension.m in Sources */,
 				8FEDB1E81BBEE30C00E8D3BC /* UIView+CYXFrame.m in Sources */,
 				8FDF2A281BBC27FE0083DB4F /* CYXSettingViewController.m in Sources */,
 				8F7329811BBAAA840071930C /* main.m in Sources */,
