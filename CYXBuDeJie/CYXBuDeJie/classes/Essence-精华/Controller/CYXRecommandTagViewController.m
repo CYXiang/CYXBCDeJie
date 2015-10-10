@@ -11,11 +11,15 @@
 #import "CYXReaommandTag.h"
 #import <AFNetworking.h>
 #import <MJExtension.h>
+#import <SVProgressHUD.h>
 
 @interface CYXRecommandTagViewController ()
 
 /** 所有的标签数据 */
 @property (strong, nonatomic) NSArray * recommandTags;
+
+/** 请求管理者 */
+@property (strong, nonatomic) AFHTTPSessionManager * manager;
 
 @end
 
@@ -42,6 +46,14 @@ static NSString * const CYXRecommandCellID = @"recommandTag";
 
 @implementation CYXRecommandTagViewController
 
+/** mamager 属性懒加载*/
+- (AFHTTPSessionManager *)manager
+{
+    if (!_manager) {
+        _manager = [AFHTTPSessionManager manager];
+    }
+    return _manager;
+}
 
 
 - (void)viewDidLoad {
@@ -54,7 +66,7 @@ static NSString * const CYXRecommandCellID = @"recommandTag";
     
     self.tableView.backgroundColor = CYXCommonBgColor;
     
-    // 到服务器加载标签
+    // 到服务器加载标签数据
     [self loadNewRecommandTags];
     
     // 注册可重用TableViewCell
@@ -66,30 +78,39 @@ static NSString * const CYXRecommandCellID = @"recommandTag";
  */
 - (void)loadNewRecommandTags{
 
+    [SVProgressHUD show];
+    
     NSString *url = CYXRequestURL;
+    
+    __weak typeof(self) weakSelf = self;
     
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"] = @"tag_recommend";
     params[@"action"] = @"sub";
     params[@"c"] = @"topic";
     
-    [[AFHTTPSessionManager manager] GET:url parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+    [self.manager GET:url parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
         CYXLog(@"成功");
-        CYXLog(@"%@",responseObject);
-        self.recommandTags = [CYXReaommandTag objectArrayWithKeyValuesArray:responseObject];
-        CYXLog(@"%@",self.recommandTags);
+
+        weakSelf.recommandTags = [CYXReaommandTag objectArrayWithKeyValuesArray:responseObject];
+//        CYXLog(@"%@",self.recommandTags);
         
-        [self.tableView reloadData];
+        [weakSelf.tableView reloadData];
+        
+        [SVProgressHUD dismiss];
     } failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
         CYXLog(@"失败");
+        [SVProgressHUD dismiss];
     }];
     
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewWillDisappear:(BOOL)animated{
+    // 取消当前所有请求
+    [self.manager invalidateSessionCancelingTasks:YES];
+    [SVProgressHUD dismiss];
 }
+
 
 #pragma mark - Table view data source
 

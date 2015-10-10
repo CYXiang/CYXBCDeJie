@@ -25,6 +25,8 @@
 		8F8D0F781BC8A3B0004300C5 /* NSObject+CYXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8D0F771BC8A3B0004300C5 /* NSObject+CYXExtension.m */; settings = {ASSET_TAGS = (); }; };
 		8F8D0F7B1BC8A83B004300C5 /* UITextField+CYXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8D0F7A1BC8A83B004300C5 /* UITextField+CYXExtension.m */; settings = {ASSET_TAGS = (); }; };
 		8F8D0F811BC8BA51004300C5 /* CYXConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8D0F801BC8BA51004300C5 /* CYXConst.m */; settings = {ASSET_TAGS = (); }; };
+		8F8D0F841BC8EEE5004300C5 /* UIImage+CYXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8D0F831BC8EEE5004300C5 /* UIImage+CYXExtension.m */; settings = {ASSET_TAGS = (); }; };
+		8F8D0F871BC8EF07004300C5 /* UIImageView+CYXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8D0F861BC8EF07004300C5 /* UIImageView+CYXExtension.m */; settings = {ASSET_TAGS = (); }; };
 		8FBD8B551BC692C6007AE903 /* CYXRecommandTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FBD8B541BC692C6007AE903 /* CYXRecommandTagViewController.m */; settings = {ASSET_TAGS = (); }; };
 		8FBD8B591BC693AB007AE903 /* CYXRecommandTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FBD8B571BC693AB007AE903 /* CYXRecommandTagCell.m */; settings = {ASSET_TAGS = (); }; };
 		8FBD8B5A1BC693AB007AE903 /* CYXRecommandTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FBD8B581BC693AB007AE903 /* CYXRecommandTagCell.xib */; settings = {ASSET_TAGS = (); }; };
@@ -96,6 +98,10 @@
 		8F8D0F7A1BC8A83B004300C5 /* UITextField+CYXExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+CYXExtension.m"; sourceTree = "<group>"; };
 		8F8D0F7F1BC8BA51004300C5 /* CYXConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXConst.h; sourceTree = "<group>"; };
 		8F8D0F801BC8BA51004300C5 /* CYXConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXConst.m; sourceTree = "<group>"; };
+		8F8D0F821BC8EEE5004300C5 /* UIImage+CYXExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CYXExtension.h"; sourceTree = "<group>"; };
+		8F8D0F831BC8EEE5004300C5 /* UIImage+CYXExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CYXExtension.m"; sourceTree = "<group>"; };
+		8F8D0F851BC8EF07004300C5 /* UIImageView+CYXExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+CYXExtension.h"; sourceTree = "<group>"; };
+		8F8D0F861BC8EF07004300C5 /* UIImageView+CYXExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+CYXExtension.m"; sourceTree = "<group>"; };
 		8FBD8B531BC692C6007AE903 /* CYXRecommandTagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXRecommandTagViewController.h; sourceTree = "<group>"; };
 		8FBD8B541BC692C6007AE903 /* CYXRecommandTagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXRecommandTagViewController.m; sourceTree = "<group>"; };
 		8FBD8B561BC693AB007AE903 /* CYXRecommandTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXRecommandTagCell.h; sourceTree = "<group>"; };
@@ -338,6 +344,10 @@
 				8F8D0F7A1BC8A83B004300C5 /* UITextField+CYXExtension.m */,
 				8F8D0F761BC8A3B0004300C5 /* NSObject+CYXExtension.h */,
 				8F8D0F771BC8A3B0004300C5 /* NSObject+CYXExtension.m */,
+				8F8D0F821BC8EEE5004300C5 /* UIImage+CYXExtension.h */,
+				8F8D0F831BC8EEE5004300C5 /* UIImage+CYXExtension.m */,
+				8F8D0F851BC8EF07004300C5 /* UIImageView+CYXExtension.h */,
+				8F8D0F861BC8EF07004300C5 /* UIImageView+CYXExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -610,6 +620,7 @@
 				8F7329851BBAB40D0071930C /* UIBarButtonItem+CYXExtension.m in Sources */,
 				8FF432AB1BC6E6390056F4FF /* CYXReaommandTag.m in Sources */,
 				8F191EBC1BBDB53F00C75CF6 /* CYXLoginViewController.m in Sources */,
+				8F8D0F841BC8EEE5004300C5 /* UIImage+CYXExtension.m in Sources */,
 				8F73297B1BBAAA840071930C /* CYXEssenceController.m in Sources */,
 				8F73297E1BBAAA840071930C /* CYXNewController.m in Sources */,
 				8F8D0F811BC8BA51004300C5 /* CYXConst.m in Sources */,
@@ -622,6 +633,7 @@
 				8F7329821BBAAA840071930C /* CYXTabBar.m in Sources */,
 				8FEDB1EB1BBEE36500E8D3BC /* CYXQuickLoginButton.m in Sources */,
 				8F73297F1BBAAA840071930C /* AppDelegate.m in Sources */,
+				8F8D0F871BC8EF07004300C5 /* UIImageView+CYXExtension.m in Sources */,
 				8FBD8B551BC692C6007AE903 /* CYXRecommandTagViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,6 +16,8 @@
 #import "UITextField+CYXExtension.h"
 #import "NSObject+CYXExtension.h"
 #import "CYXConst.h"
+#import "UIImage+CYXExtension.h"
+#import "UIImageView+CYXExtension.h"
 
 #ifdef DEBUG // 开发调试阶段
 #define CYXLog(...) NSLog(__VA_ARGS__)

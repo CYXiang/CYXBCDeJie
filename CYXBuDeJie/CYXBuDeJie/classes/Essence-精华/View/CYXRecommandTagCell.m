@@ -23,13 +23,17 @@
 
 @implementation CYXRecommandTagCell
 
+- (void)awakeFromNib{
+//    // 设置imageListView的圆角半径，实现圆形图片的效果（但性能不好不推荐使用）
+//    self.imageListView.layer.cornerRadius = self.imageListView.width * 0.5;
+}
 
 - (void)setReaommandTag:(CYXReaommandTag *)reaommandTag{
 
     _reaommandTag = reaommandTag;
     
-    // 通过SDWebImage加载图片
-    [self.imageListView sd_setImageWithURL:[NSURL URLWithString: reaommandTag.image_list] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+    // 通过imageView分类加载图片
+    [self.imageListView setCircleHeaderWithURL:reaommandTag.image_list];
     
     self.themeNameLable.text = reaommandTag.theme_name;
     
