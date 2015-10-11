@@ -8,6 +8,8 @@
 
 #import "CYXMeController.h"
 #import "CYXSettingViewController.h"
+#import "CYXMeCell.h"
+#import "CYXMeFooter.h"
 
 @interface CYXMeController ()
 
@@ -15,24 +17,57 @@
 
 @implementation CYXMeController
 
+static NSString * const CYXMeCellID = @"cell";
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = CYXCommonBgColor;
+    
+    // 设置表格
+    [self setupTable];
+    
+    // 设置导航栏
+    [self setupNav];
+    
+    
 
+}
+
+/**
+ *  设置表格
+ */
+- (void)setupTable{
+    self.tableView.backgroundColor = CYXCommonBgColor;
+    
+    [self.tableView registerClass:[CYXMeCell class] forCellReuseIdentifier:CYXMeCellID];
+    
+    self.tableView.sectionHeaderHeight = 0;
+    self.tableView.sectionFooterHeight = CYXMargin;
+    
+    // 九宫格使用footerView
+    self.tableView.tableFooterView = [[CYXMeFooter alloc]init];
+    
+    self.tableView.contentInset = UIEdgeInsetsMake(CYXMargin - CYXGroupFirstCellY, 0, 0, 0);
+    
+}
+
+
+/**
+ *  设置导航栏
+ */
+- (void)setupNav{
     // 设置标题
     self.navigationItem.title = @"我的";
-
+    
     // 设置右上角的按钮
     UIBarButtonItem *item1 = [UIBarButtonItem itemWithimageName:@"mine-moon-icon" highlightImage:@"mine-sun-icon-click" target:self action:@selector(moonBtnClick)];
     
     UIBarButtonItem *item2 = [UIBarButtonItem itemWithimageName:@"mine-setting-icon" highlightImage:@"mine-setting-icon-click" target:self action:@selector(setBtnClick)];
-
     
     self.navigationItem.rightBarButtonItems = @[item2,item1];
-    
-
 }
+
+
 
 - (void)moonBtnClick{
     CYXLogFuc;
@@ -50,19 +85,29 @@
 
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - TableView DataSoures
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 2;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    return 1;
 }
-*/
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    CYXMeCell *cell = [tableView dequeueReusableCellWithIdentifier:CYXMeCellID];
+    if (indexPath.section == 0) {
+        cell.imageView.image = [UIImage imageNamed:@"setup-head-default"];
+        cell.textLabel.text = @"登陆/注册";
+    }else if(indexPath.section == 1){
+        cell.textLabel.text = @"离线下载";
+    }
+    
+    
+    return cell;
+}
 
 @end

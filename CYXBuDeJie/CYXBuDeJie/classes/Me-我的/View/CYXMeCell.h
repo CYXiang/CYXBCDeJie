@@ -1,13 +1,13 @@
 //
-//  CYXMeController.h
+//  CYXMeCell.h
 //  CYXBuDeJie
 //
-//  Created by Macx on 15/9/28.
+//  Created by Macx on 15/10/11.
 //  Copyright © 2015年 CYX. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface CYXMeController : UITableViewController
+@interface CYXMeCell : UITableViewCell
 
 @end
