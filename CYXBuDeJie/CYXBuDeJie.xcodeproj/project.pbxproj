@@ -15,6 +15,7 @@
 		8F7097A21BCA7A71003B112C /* CYXMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7097A11BCA7A71003B112C /* CYXMeCell.m */; settings = {ASSET_TAGS = (); }; };
 		8F7097A51BCA84D5003B112C /* CYXMeFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7097A41BCA84D5003B112C /* CYXMeFooter.m */; settings = {ASSET_TAGS = (); }; };
 		8F7097A81BCAA5DE003B112C /* CYXSquareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7097A71BCAA5DE003B112C /* CYXSquareButton.m */; settings = {ASSET_TAGS = (); }; };
+		8F7097AB1BCAB502003B112C /* CYXHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7097AA1BCAB502003B112C /* CYXHTTPSessionManager.m */; settings = {ASSET_TAGS = (); }; };
 		8F73297B1BBAAA840071930C /* CYXEssenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7329591BBAAA840071930C /* CYXEssenceController.m */; };
 		8F73297D1BBAAA840071930C /* CYXMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7329651BBAAA840071930C /* CYXMeController.m */; };
 		8F73297E1BBAAA840071930C /* CYXNewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F73296B1BBAAA840071930C /* CYXNewController.m */; };
@@ -34,6 +35,8 @@
 		8FBD8B551BC692C6007AE903 /* CYXRecommandTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FBD8B541BC692C6007AE903 /* CYXRecommandTagViewController.m */; settings = {ASSET_TAGS = (); }; };
 		8FBD8B591BC693AB007AE903 /* CYXRecommandTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FBD8B571BC693AB007AE903 /* CYXRecommandTagCell.m */; settings = {ASSET_TAGS = (); }; };
 		8FBD8B5A1BC693AB007AE903 /* CYXRecommandTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FBD8B581BC693AB007AE903 /* CYXRecommandTagCell.xib */; settings = {ASSET_TAGS = (); }; };
+		8FC460571BCC02CF00886B09 /* CYXWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC460551BCC02CF00886B09 /* CYXWebViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8FC460581BCC02CF00886B09 /* CYXWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FC460561BCC02CF00886B09 /* CYXWebViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		8FDF2A281BBC27FE0083DB4F /* CYXSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDF2A271BBC27FE0083DB4F /* CYXSettingViewController.m */; };
 		8FDF2A2A1BBC2B930083DB4F /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FDF2A291BBC2B930083DB4F /* Test.storyboard */; };
 		8FDF2A2D1BBC31140083DB4F /* CYXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDF2A2C1BBC31140083DB4F /* CYXNavigationController.m */; };
@@ -79,6 +82,8 @@
 		8F7097A41BCA84D5003B112C /* CYXMeFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXMeFooter.m; sourceTree = "<group>"; };
 		8F7097A61BCAA5DE003B112C /* CYXSquareButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXSquareButton.h; sourceTree = "<group>"; };
 		8F7097A71BCAA5DE003B112C /* CYXSquareButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXSquareButton.m; sourceTree = "<group>"; };
+		8F7097A91BCAB502003B112C /* CYXHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXHTTPSessionManager.h; sourceTree = "<group>"; };
+		8F7097AA1BCAB502003B112C /* CYXHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXHTTPSessionManager.m; sourceTree = "<group>"; };
 		8F7329581BBAAA840071930C /* CYXEssenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXEssenceController.h; sourceTree = "<group>"; };
 		8F7329591BBAAA840071930C /* CYXEssenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXEssenceController.m; sourceTree = "<group>"; };
 		8F7329641BBAAA840071930C /* CYXMeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXMeController.h; sourceTree = "<group>"; };
@@ -119,6 +124,9 @@
 		8FBD8B561BC693AB007AE903 /* CYXRecommandTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXRecommandTagCell.h; sourceTree = "<group>"; };
 		8FBD8B571BC693AB007AE903 /* CYXRecommandTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXRecommandTagCell.m; sourceTree = "<group>"; };
 		8FBD8B581BC693AB007AE903 /* CYXRecommandTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CYXRecommandTagCell.xib; sourceTree = "<group>"; };
+		8FC460541BCC02CF00886B09 /* CYXWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXWebViewController.h; sourceTree = "<group>"; };
+		8FC460551BCC02CF00886B09 /* CYXWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXWebViewController.m; sourceTree = "<group>"; };
+		8FC460561BCC02CF00886B09 /* CYXWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CYXWebViewController.xib; sourceTree = "<group>"; };
 		8FDF2A261BBC27FE0083DB4F /* CYXSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXSettingViewController.h; sourceTree = "<group>"; };
 		8FDF2A271BBC27FE0083DB4F /* CYXSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXSettingViewController.m; sourceTree = "<group>"; };
 		8FDF2A291BBC2B930083DB4F /* Test.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
@@ -277,6 +285,9 @@
 				8FDF2A261BBC27FE0083DB4F /* CYXSettingViewController.h */,
 				8FDF2A271BBC27FE0083DB4F /* CYXSettingViewController.m */,
 				8FDF2A291BBC2B930083DB4F /* Test.storyboard */,
+				8FC460541BCC02CF00886B09 /* CYXWebViewController.h */,
+				8FC460551BCC02CF00886B09 /* CYXWebViewController.m */,
+				8FC460561BCC02CF00886B09 /* CYXWebViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -340,15 +351,17 @@
 			isa = PBXGroup;
 			children = (
 				8F7329711BBAAA840071930C /* Category */,
-				8F7329781BBAAA840071930C /* View */,
-				8F7329761BBAAA840071930C /* Model */,
 				8F7329721BBAAA840071930C /* Controller */,
+				8F7329761BBAAA840071930C /* Model */,
+				8F7329781BBAAA840071930C /* View */,
 				8F73296F1BBAAA840071930C /* AppDelegate.h */,
 				8F7329701BBAAA840071930C /* AppDelegate.m */,
 				8F7329751BBAAA840071930C /* main.m */,
 				8F7329771BBAAA840071930C /* PrefixHeader.pch */,
 				8F8D0F7F1BC8BA51004300C5 /* CYXConst.h */,
 				8F8D0F801BC8BA51004300C5 /* CYXConst.m */,
+				8F7097A91BCAB502003B112C /* CYXHTTPSessionManager.h */,
+				8F7097AA1BCAB502003B112C /* CYXHTTPSessionManager.m */,
 			);
 			path = other;
 			sourceTree = "<group>";
@@ -573,6 +586,7 @@
 			files = (
 				8F445FE41BBDB1020094765C /* CYXTestViewController.storyboard in Resources */,
 				8F7FCDF81BB6E26600F27474 /* Assets.xcassets in Resources */,
+				8FC460581BCC02CF00886B09 /* CYXWebViewController.xib in Resources */,
 				8FBD8B5A1BC693AB007AE903 /* CYXRecommandTagCell.xib in Resources */,
 				8FDF2A2A1BBC2B930083DB4F /* Test.storyboard in Resources */,
 			);
@@ -641,11 +655,13 @@
 				8F7329851BBAB40D0071930C /* UIBarButtonItem+CYXExtension.m in Sources */,
 				8FF432AB1BC6E6390056F4FF /* CYXReaommandTag.m in Sources */,
 				8F191EBC1BBDB53F00C75CF6 /* CYXLoginViewController.m in Sources */,
+				8F7097AB1BCAB502003B112C /* CYXHTTPSessionManager.m in Sources */,
 				8F8D0F841BC8EEE5004300C5 /* UIImage+CYXExtension.m in Sources */,
 				8F73297B1BBAAA840071930C /* CYXEssenceController.m in Sources */,
 				8F73297E1BBAAA840071930C /* CYXNewController.m in Sources */,
 				8F8D0F811BC8BA51004300C5 /* CYXConst.m in Sources */,
 				8F8D0F781BC8A3B0004300C5 /* NSObject+CYXExtension.m in Sources */,
+				8FC460571BCC02CF00886B09 /* CYXWebViewController.m in Sources */,
 				8F7329801BBAAA840071930C /* CYXTabBarController.m in Sources */,
 				8F8D0F7B1BC8A83B004300C5 /* UITextField+CYXExtension.m in Sources */,
 				8FEDB1E81BBEE30C00E8D3BC /* UIView+CYXFrame.m in Sources */,

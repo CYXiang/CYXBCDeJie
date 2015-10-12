@@ -9,6 +9,9 @@
 #import "CYXMeFooter.h"
 #import "CYXMeSquare.h"
 #import "CYXSquareButton.h"
+#import "CYXHTTPSessionManager.h"
+#import "CYXWebViewController.h"
+
 #import <AFNetworking.h>
 #import <MJExtension.h>
 #import <UIButton+WebCache.h>
@@ -28,7 +31,7 @@
         __weak typeof(self) weakSelf = self;
         
         // 发送请求
-        [[AFHTTPSessionManager manager]GET:CYXRequestURL parameters:param success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+        [[CYXHTTPSessionManager manager]GET:CYXRequestURL parameters:param success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
             CYXLog(@"%@",responseObject);
             [responseObject writeToFile:@"/Users/Macx/Desktop/杂/me.plist" atomically:YES];
             NSArray *squares = [CYXMeSquare objectArrayWithKeyValuesArray:responseObject[@"square_list"]];
@@ -62,8 +65,9 @@
     for (int i = 0; i < count; i++) {
         // 添加子控件
         CYXSquareButton *button = [CYXSquareButton buttonWithType:UIButtonTypeCustom];
+        [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
         
-        button.backgroundColor = CYXRandomColor;
+//        button.backgroundColor = CYXRandomColor;
         
         [self addSubview:button];
         
@@ -73,15 +77,46 @@
         button.x = (i % col) * buttonW;
         button.y = (i / col) * buttonH;
         
-        // 设置数据
+        // 在button内部设置设置数据
+        button.square = squares[i];
+    }
+//    NSInteger rowCount = (count + col - 1) / col;
+//        NSUInteger rowsCount = count / col;
+//        if (count % col) {
+//            rowsCount++;
+//        }
+//    self.heigth = rowsCount *buttonH;
+    // 设置footerView的底部为最后一个子控件的底部，使得按钮可以交互
+    self.heigth = self.subviews.lastObject.bottom;
+}
+
+
+- (void)buttonClick:(CYXSquareButton *)button{
+    
+    NSString *url = button.square.url;
+    
+    if ([url hasPrefix:@"mod://"]) {
+        if ([url hasSuffix:@""]) {
+            
+        }else if([url hasSuffix:@""]){
         
-        CYXMeSquare *square = squares[i];
-        [button setTitle:square.name forState:UIControlStateNormal];
-        [button sd_setImageWithURL:[NSURL URLWithString:square.icon] forState:UIControlStateNormal placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+        }
+    }else if([url hasPrefix:@"http://"]){
+        UITabBarController *root = (UITabBarController *)self.window.rootViewController;
         
+        UINavigationController * nav = (UINavigationController *)root.selectedViewController;
+        
+        CYXWebViewController *webView = [[CYXWebViewController alloc]init];
+        
+        webView.url = button.square.url;
+        
+        [nav pushViewController:webView animated:YES];
+        
+        
+    }else{
+        CYXLog(@"其他");
     }
     
 }
-
 
 @end

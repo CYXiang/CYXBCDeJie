@@ -7,13 +7,17 @@
 //
 
 #import "CYXSquareButton.h"
+#import "CYXMeSquare.h"
+#import <UIButton+WebCache.h>
 
 @implementation CYXSquareButton
 
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
+        [self setBackgroundImage:[UIImage imageNamed:@"mainCellBackground"] forState:UIControlStateNormal];
         self.titleLabel.textAlignment = NSTextAlignmentCenter;
         self.titleLabel.font = [UIFont systemFontOfSize:15];
+        [self setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     }
     return self;
 }
@@ -34,6 +38,16 @@
     self.titleLabel.width = self.width;
     self.titleLabel.heigth = self.heigth - self.titleLabel.y;
     
+}
+/**
+ *  给自身控件设置数据
+ */
+- (void)setSquare:(CYXMeSquare *)square{
+
+    _square = square;
+    
+    [self setTitle:square.name forState:UIControlStateNormal];
+    [self sd_setImageWithURL:[NSURL URLWithString:square.icon] forState:UIControlStateNormal placeholderImage:[UIImage circleImageNamed:@"defaultUserIcon"]];
 }
 
 @end

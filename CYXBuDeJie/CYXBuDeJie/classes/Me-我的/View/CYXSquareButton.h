@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class CYXMeSquare;
+
 @interface CYXSquareButton : UIButton
+
+/** 模型属性 */
+@property (strong, nonatomic) CYXMeSquare * square;
 
 @end
