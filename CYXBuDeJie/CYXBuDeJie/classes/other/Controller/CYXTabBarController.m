@@ -69,23 +69,19 @@
  */
 - (void)setUpAllChildViewControllers{
     
-    CYXLogFuc;
-    
-    
-    // 添加第四个子控制器
-    [self setUpOneViewController:[[CYXNavigationController alloc]initWithRootViewController:[[CYXMeController alloc]initWithStyle:UITableViewStyleGrouped]]  title:@"我" image:@"tabBar_me_icon" selectImage:@"tabBar_me_click_icon"];
-    
-    // 添加第一个子控制器
+    // ”精华“控制器
     [self setUpOneViewController:[[CYXNavigationController alloc]initWithRootViewController:[[CYXEssenceController alloc]init]] title:@"精华" image:@"tabBar_essence_icon" selectImage:@"tabBar_essence_click_icon"];
     
-    // 添加第二个子控制器
+    // ”新帖“控制器
     [self setUpOneViewController:[[CYXNavigationController alloc]initWithRootViewController:[[CYXNewController alloc]init]] title:@"新帖" image:@"tabBar_new_icon" selectImage:@"tabBar_new_click_icon"];
     
 
-    
+    // “关注“控制器
     CYXTestViewController *vc = [UIStoryboard storyboardWithName:@"CYXTestViewController" bundle:nil].instantiateInitialViewController;
-    
      [self setUpOneViewController:[[CYXNavigationController alloc]initWithRootViewController:vc] title:@"关注" image:@"tabBar_friendTrends_icon" selectImage:@"tabBar_friendTrends_click_icon"];
+    
+    // ”我的“控制器
+    [self setUpOneViewController:[[CYXNavigationController alloc]initWithRootViewController:[[CYXMeController alloc]initWithStyle:UITableViewStyleGrouped]]  title:@"我" image:@"tabBar_me_icon" selectImage:@"tabBar_me_click_icon"];
     
     
     

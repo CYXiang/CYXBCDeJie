@@ -88,6 +88,11 @@
 //    self.heigth = rowsCount *buttonH;
     // 设置footerView的底部为最后一个子控件的底部，使得按钮可以交互
     self.heigth = self.subviews.lastObject.bottom;
+    
+    // 设置footer   解决弹不上去得bug
+    UITableView *tableView = (UITableView *)self.superview;
+    tableView.tableFooterView = self;
+
 }
 
 

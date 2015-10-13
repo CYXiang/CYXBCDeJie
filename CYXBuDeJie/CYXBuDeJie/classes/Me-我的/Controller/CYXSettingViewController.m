@@ -7,6 +7,7 @@
 //
 
 #import "CYXSettingViewController.h"
+#import "CYXClearCacheCell.h"
 
 @interface CYXSettingViewController ()
 
@@ -14,46 +15,57 @@
 
 @implementation CYXSettingViewController
 
+static NSString *const CYXClearCellID = @"clear_cell";
+static NSString *const CYXOtherCellID = @"other_cell";
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor grayColor];
+    self.view.backgroundColor = CYXCommonBgColor;
     
-    
+    [self.tableView registerClass:[CYXClearCacheCell class] forCellReuseIdentifier:CYXClearCellID];
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:CYXOtherCellID];
     
     self.navigationItem.title = @"设置";
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)getCatchSize{
+
+    
+    
 }
 
 #pragma mark - Table view data source
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 20;
+    return 1;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+//    
+//    if (!cell) {
+//        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+//    }
     
-    if (!cell) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+    if (indexPath.section == 0) {
+        CYXClearCacheCell *cell = [tableView dequeueReusableCellWithIdentifier:CYXClearCellID];
+        return cell;
     }
-    
-    cell.textLabel.text = [NSString stringWithFormat:@"select-------%zd",indexPath.row];
-    
-    return cell;
+    return [tableView dequeueReusableCellWithIdentifier:CYXOtherCellID];
 }
+
+#pragma mark - table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    UIViewController *testVC = [UIStoryboard storyboardWithName:@"Test" bundle:nil].instantiateInitialViewController;
+//    UIViewController *testVC = [UIStoryboard storyboardWithName:@"Test" bundle:nil].instantiateInitialViewController;
     
-    [self.navigationController pushViewController:testVC animated:YES];
+//    [self.navigationController pushViewController:testVC animated:YES];
+    
+    
 }
 
 

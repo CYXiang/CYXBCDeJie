@@ -43,11 +43,13 @@ static NSString * const CYXMeCellID = @"cell";
     
     self.tableView.sectionHeaderHeight = 0;
     self.tableView.sectionFooterHeight = CYXMargin;
+    // 代码应该写到上面
+    self.tableView.contentInset = UIEdgeInsetsMake(CYXMargin - CYXGroupFirstCellY, 0, 0, 0);
     
     // 九宫格使用footerView
     self.tableView.tableFooterView = [[CYXMeFooter alloc]init];
     
-    self.tableView.contentInset = UIEdgeInsetsMake(CYXMargin - CYXGroupFirstCellY, 0, 0, 0);
+
     
 }
 
@@ -78,7 +80,7 @@ static NSString * const CYXMeCellID = @"cell";
  */
 - (void)setBtnClick{
     
-    CYXSettingViewController *setVC = [[CYXSettingViewController alloc]init];
+    CYXSettingViewController *setVC = [[CYXSettingViewController alloc]initWithStyle:UITableViewStyleGrouped];
     
     [self.navigationController pushViewController:setVC animated:YES];
     
