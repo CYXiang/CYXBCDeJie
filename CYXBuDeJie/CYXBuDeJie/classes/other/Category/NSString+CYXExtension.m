@@ -36,6 +36,7 @@
             // 累加文件夹下所有文件
             fileSize += [mgr attributesOfItemAtPath:fullSubpath error:nil].fileSize;
         }
+        return fileSize;
     }
     
     // 如果是文件
