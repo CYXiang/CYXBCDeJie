@@ -16,3 +16,12 @@ UIKIT_EXTERN CGFloat const CYXMargin;
 
 /** group样式下第一个Cell默认的Y值 */
 UIKIT_EXTERN CGFloat const CYXGroupFirstCellY;
+
+/** 导航栏的最Y值(底部) */
+UIKIT_EXTERN CGFloat const CYXNavBarBottom;
+
+/** TabBar的高度 */
+UIKIT_EXTERN CGFloat const CYXTabBarH;
+
+/** 标题栏的高度 */
+UIKIT_EXTERN CGFloat const CYXTitlesViewH;
