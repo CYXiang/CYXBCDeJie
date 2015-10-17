@@ -31,7 +31,6 @@
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
         if (cell == nil) {
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
-            cell.backgroundColor = [UIColor yellowColor];
         }
         
         cell.textLabel.text = [NSString stringWithFormat:@"%@ - %zd", self.title, indexPath.row];

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F03263F1BD273B5008DF0D7 /* NSDate+CYXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F03263E1BD273B5008DF0D7 /* NSDate+CYXExtension.m */; settings = {ASSET_TAGS = (); }; };
 		8F191EBC1BBDB53F00C75CF6 /* CYXLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F191EBB1BBDB53F00C75CF6 /* CYXLoginViewController.m */; };
 		8F1BD1DA1BBF9EEE00EFEF3E /* CYXLoginRegisterTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1BD1D91BBF9EEE00EFEF3E /* CYXLoginRegisterTextField.m */; settings = {ASSET_TAGS = (); }; };
 		8F445FE21BBDB06A0094765C /* CYXTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F445FE11BBDB06A0094765C /* CYXTestViewController.m */; };
@@ -51,6 +52,9 @@
 		8FEDB1E81BBEE30C00E8D3BC /* UIView+CYXFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEDB1E71BBEE30C00E8D3BC /* UIView+CYXFrame.m */; };
 		8FEDB1EB1BBEE36500E8D3BC /* CYXQuickLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEDB1EA1BBEE36500E8D3BC /* CYXQuickLoginButton.m */; };
 		8FF432AB1BC6E6390056F4FF /* CYXReaommandTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF432AA1BC6E6390056F4FF /* CYXReaommandTag.m */; settings = {ASSET_TAGS = (); }; };
+		8FF96C511BD15CC400F06712 /* CYXTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF96C501BD15CC400F06712 /* CYXTopic.m */; settings = {ASSET_TAGS = (); }; };
+		8FF96C551BD2328900F06712 /* CYXTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF96C531BD2328900F06712 /* CYXTopicCell.m */; settings = {ASSET_TAGS = (); }; };
+		8FF96C561BD2328900F06712 /* CYXTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FF96C541BD2328900F06712 /* CYXTopicCell.xib */; settings = {ASSET_TAGS = (); }; };
 		B01AD61A2E99CA66BECFCDC6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B3D50366C1542ED7E28CB4 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +79,8 @@
 		0C9EF6754048D4CE9CADA925 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		4177FB447A8CCD973CD2A128 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		67B3D50366C1542ED7E28CB4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F03263D1BD273B5008DF0D7 /* NSDate+CYXExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CYXExtension.h"; sourceTree = "<group>"; };
+		8F03263E1BD273B5008DF0D7 /* NSDate+CYXExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CYXExtension.m"; sourceTree = "<group>"; };
 		8F191EBA1BBDB53F00C75CF6 /* CYXLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXLoginViewController.h; sourceTree = "<group>"; };
 		8F191EBB1BBDB53F00C75CF6 /* CYXLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXLoginViewController.m; sourceTree = "<group>"; };
 		8F1BD1D81BBF9EEE00EFEF3E /* CYXLoginRegisterTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXLoginRegisterTextField.h; sourceTree = "<group>"; };
@@ -162,6 +168,11 @@
 		8FEDB1EA1BBEE36500E8D3BC /* CYXQuickLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXQuickLoginButton.m; sourceTree = "<group>"; };
 		8FF432A91BC6E6390056F4FF /* CYXReaommandTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXReaommandTag.h; sourceTree = "<group>"; };
 		8FF432AA1BC6E6390056F4FF /* CYXReaommandTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXReaommandTag.m; sourceTree = "<group>"; };
+		8FF96C4F1BD15CC400F06712 /* CYXTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXTopic.h; sourceTree = "<group>"; };
+		8FF96C501BD15CC400F06712 /* CYXTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXTopic.m; sourceTree = "<group>"; };
+		8FF96C521BD2328900F06712 /* CYXTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXTopicCell.h; sourceTree = "<group>"; };
+		8FF96C531BD2328900F06712 /* CYXTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXTopicCell.m; sourceTree = "<group>"; };
+		8FF96C541BD2328900F06712 /* CYXTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CYXTopicCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +266,8 @@
 			children = (
 				8FF432A91BC6E6390056F4FF /* CYXReaommandTag.h */,
 				8FF432AA1BC6E6390056F4FF /* CYXReaommandTag.m */,
+				8FF96C4F1BD15CC400F06712 /* CYXTopic.h */,
+				8FF96C501BD15CC400F06712 /* CYXTopic.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -267,6 +280,9 @@
 				8FBD8B581BC693AB007AE903 /* CYXRecommandTagCell.xib */,
 				8F502EEE1BD0057D0045FF44 /* CYXTitleButton.h */,
 				8F502EEF1BD0057D0045FF44 /* CYXTitleButton.m */,
+				8FF96C521BD2328900F06712 /* CYXTopicCell.h */,
+				8FF96C531BD2328900F06712 /* CYXTopicCell.m */,
+				8FF96C541BD2328900F06712 /* CYXTopicCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -429,6 +445,8 @@
 				8F8D0F861BC8EF07004300C5 /* UIImageView+CYXExtension.m */,
 				8FA91B491BCC98190068D032 /* NSString+CYXExtension.h */,
 				8FA91B4A1BCC98190068D032 /* NSString+CYXExtension.m */,
+				8F03263D1BD273B5008DF0D7 /* NSDate+CYXExtension.h */,
+				8F03263E1BD273B5008DF0D7 /* NSDate+CYXExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -633,6 +651,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FF96C561BD2328900F06712 /* CYXTopicCell.xib in Resources */,
 				8F445FE41BBDB1020094765C /* CYXTestViewController.storyboard in Resources */,
 				8F7FCDF81BB6E26600F27474 /* Assets.xcassets in Resources */,
 				8FC460581BCC02CF00886B09 /* CYXWebViewController.xib in Resources */,
@@ -707,6 +726,7 @@
 				8FF432AB1BC6E6390056F4FF /* CYXReaommandTag.m in Sources */,
 				8F191EBC1BBDB53F00C75CF6 /* CYXLoginViewController.m in Sources */,
 				8F7097AB1BCAB502003B112C /* CYXHTTPSessionManager.m in Sources */,
+				8FF96C551BD2328900F06712 /* CYXTopicCell.m in Sources */,
 				8F8D0F841BC8EEE5004300C5 /* UIImage+CYXExtension.m in Sources */,
 				8F73297B1BBAAA840071930C /* CYXEssenceController.m in Sources */,
 				8F73297E1BBAAA840071930C /* CYXNewController.m in Sources */,
@@ -717,9 +737,11 @@
 				8F7329801BBAAA840071930C /* CYXTabBarController.m in Sources */,
 				8F502EE41BD004190045FF44 /* CYXVideoViewController.m in Sources */,
 				8F8D0F7B1BC8A83B004300C5 /* UITextField+CYXExtension.m in Sources */,
+				8FF96C511BD15CC400F06712 /* CYXTopic.m in Sources */,
 				8FEDB1E81BBEE30C00E8D3BC /* UIView+CYXFrame.m in Sources */,
 				8FDF2A281BBC27FE0083DB4F /* CYXSettingViewController.m in Sources */,
 				8FA91B4E1BCCA6180068D032 /* CYXClearCacheCell.m in Sources */,
+				8F03263F1BD273B5008DF0D7 /* NSDate+CYXExtension.m in Sources */,
 				8F7329811BBAAA840071930C /* main.m in Sources */,
 				8F7097A21BCA7A71003B112C /* CYXMeCell.m in Sources */,
 				8F7329821BBAAA840071930C /* CYXTabBar.m in Sources */,
