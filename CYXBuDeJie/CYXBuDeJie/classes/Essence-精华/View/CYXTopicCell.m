@@ -37,4 +37,12 @@
     
 }
 
+- (void)setFrame:(CGRect)frame{
+
+    frame.origin.y += CYXMargin;
+    frame.size.height -= CYXMargin;
+    [super setFrame:frame];
+}
+
+
 @end

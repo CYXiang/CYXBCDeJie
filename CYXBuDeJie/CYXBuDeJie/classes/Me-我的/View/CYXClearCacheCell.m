@@ -7,13 +7,14 @@
 //
 
 #import "CYXClearCacheCell.h"
+#import <SVProgressHUD.h>
 
 @implementation CYXClearCacheCell
 
-#define CYXCacheFilePath [NSS]
+#define CYXCacheFilePath [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingPathComponent:@"default"]
+
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
-
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         
         self.textLabel.text = @"清除缓存";
@@ -55,7 +56,25 @@
 }
 
 - (void)clearCache{
-    CYXLogFuc;
+
+    // 弹框
+    [SVProgressHUD showWithStatus:@"正在清除缓存..." maskType:SVProgressHUDMaskTypeBlack];
+    
+    // 在子线程进行删除操作
+    [[[NSOperationQueue alloc] init] addOperationWithBlock:^{
+        // 删除缓存文件夹
+        [[NSFileManager defaultManager] removeItemAtPath:CYXCacheFilePath error:nil];
+        
+        // 在主线程执行其他操作
+        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+            // 隐藏弹框
+            [SVProgressHUD dismiss];
+            
+            // 修改文字
+            self.textLabel.text = @"清除缓存(0B)";
+        }];
+    }];
+    
 }
 
 @end
