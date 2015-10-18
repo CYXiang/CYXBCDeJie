@@ -8,6 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
+typedef enum {
+    /** 图片 */
+    CYXTopicTypePicture = 10,
+    /** 文字 */
+    CYXTopicTypeWord = 29,
+    /** 声音 */
+    CYXTopicTypeVoice = 31,
+    /** 视频 */
+    CYXTopicTypeVideo = 41
+}CYXTopicType;
+
 @interface CYXTopic : NSObject
 
 // 用户 -- 发帖者
@@ -27,5 +38,11 @@
 @property (nonatomic, assign) NSInteger repost;
 /** 评论数量 */
 @property (nonatomic, assign) NSInteger comment;
+
+/** 帖子的类型 */
+@property (nonatomic,assign) CYXTopicType type;
+
+/** 最热评论 */
+@property (strong, nonatomic) NSArray * top_cmt;
 
 @end
