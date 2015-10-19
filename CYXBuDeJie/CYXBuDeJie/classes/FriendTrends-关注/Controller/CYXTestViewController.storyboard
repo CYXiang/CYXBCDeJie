@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="header_cry_icon" translatesAutoresizingMaskIntoConstraints="NO" id="1js-kh-lHC">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header_cry_icon" translatesAutoresizingMaskIntoConstraints="NO" id="1js-kh-lHC">
                                 <rect key="frame" x="276" y="194" width="48" height="48"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLG-N4-zYS">
@@ -55,14 +55,13 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YP3-g3-SQ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="3Nl-yB-OEn" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="8" y="212"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="BuT-Dj-rQX">
             <objects>
-                <viewController id="Lu9-2i-2TF" customClass="CYXLoginViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CYXLoginViewController" id="Lu9-2i-2TF" customClass="CYXLoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0JS-OR-co0"/>
                         <viewControllerLayoutGuide type="bottom" id="EYK-xG-RVa"/>
@@ -86,7 +85,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="3Nl-yB-OEn" kind="unwind" unwindAction="backToFriendTrendsViewController:" id="Z6C-yI-fZe"/>
+                                            <action selector="closeLoginView:" destination="Lu9-2i-2TF" eventType="touchUpInside" id="a9J-0M-gHZ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ryt-LH-bNu">

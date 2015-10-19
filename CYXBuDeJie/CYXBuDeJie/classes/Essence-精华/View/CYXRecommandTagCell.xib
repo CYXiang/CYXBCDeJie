@@ -6,7 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="recommandTag" rowHeight="134" id="KGk-i7-Jjw" customClass="CYXRecommandTagCell">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="recommandTag" rowHeight="134" id="KGk-i7-Jjw" customClass="CYXRecommandTagCell">
             <rect key="frame" x="0.0" y="0.0" width="333" height="134"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -57,7 +57,7 @@
                 <outlet property="subNumberLable" destination="HfW-Ez-cQp" id="G3W-XI-gz2"/>
                 <outlet property="themeNameLable" destination="Yak-Wn-T9h" id="mDz-33-uku"/>
             </connections>
-            <point key="canvasLocation" x="251.5" y="262"/>
+            <point key="canvasLocation" x="269.5" y="229"/>
         </tableViewCell>
     </objects>
     <resources>

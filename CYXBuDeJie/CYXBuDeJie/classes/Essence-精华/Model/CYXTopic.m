@@ -7,8 +7,30 @@
 //
 
 #import "CYXTopic.h"
+#import <MJExtension.h>
 
 @implementation CYXTopic
+
+/**
+ *  声明：数组属性中存放什么模型
+ */
+//+ (NSDictionary *)objectClassInArray{
+//
+//    return @{
+//             @"top_cmt":@"CYXComment"
+//             };
+//}
+
+/**
+ *  声明：【模型属性名】对应的【字典的key】 key-mapping
+ */
+//+ (NSDictionary *)replacedKeyFromPropertyName{
+//    return @{
+//             @"top_cmt" : @"top_cmt[0]"
+//             };
+//}
+
+
 /**
  *  重写get方法,日期处理的两种方法：方法一：自己实现NSDate判断是否为今天昨天的分类。适配iOS8以下版本
  */

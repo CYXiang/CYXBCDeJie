@@ -8,6 +8,8 @@
 
 #import "CYXTopicCell.h"
 #import "CYXTopic.h"
+#import "CYXComment.h"
+#import "CYXUser.h"
 
 @interface CYXTopicCell()
 @property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
@@ -40,12 +42,11 @@
     [self.repostButton setTitle:[NSString stringWithFormat:@"%zd",topic.repost] forState:UIControlStateNormal];
     [self.commentButton setTitle:[NSString stringWithFormat:@"%zd",topic.comment] forState:UIControlStateNormal];
     
-    if (topic.top_cmt.count) {
+    if (topic.top_cmt) {
         self.topCmtView.hidden = NO;
         
-        NSDictionary *comment = topic.top_cmt.firstObject;
-        NSString *content = comment[@"content"];
-        NSString *userName = comment[@"user"][@"username"];
+        NSString *content = topic.top_cmt.content;
+        NSString *userName = topic.top_cmt.user.username;
         self.topCmtContentLabel.text = [NSString stringWithFormat:@"%@ : %@",userName,content];
         
         

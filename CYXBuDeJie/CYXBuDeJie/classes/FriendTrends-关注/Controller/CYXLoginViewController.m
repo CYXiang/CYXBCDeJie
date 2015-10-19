@@ -61,6 +61,9 @@
     [self.view endEditing:YES];
 }
 
+- (IBAction)closeLoginView:(UIButton *)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 
 

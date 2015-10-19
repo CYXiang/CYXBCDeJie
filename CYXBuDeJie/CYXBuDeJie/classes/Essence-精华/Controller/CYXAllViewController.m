@@ -19,7 +19,7 @@
 @property (nonatomic,weak) CYXHTTPSessionManager * manager;
 
 /** 帖子模型数组 */
-@property (strong, nonatomic) NSMutableArray * topics;
+@property (strong, nonatomic) NSMutableArray<CYXTopic *> * topics;
 
 /** 用来加载下一页的参数 */
 @property (strong, nonatomic) NSString * maxtime;
@@ -41,6 +41,18 @@ static NSString *const CYXTopicCellID = @"topic";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    [self setupTable];
+    
+    [self setupRefresh];
+
+    
+}
+
+/**
+ *  设置tableView
+ */
+- (void)setupTable{
     // 设置内边距
     self.tableView.contentInset = UIEdgeInsetsMake(CYXNavBarBottom + CYXTitlesViewH, 0, CYXTabBarH, 0);
     self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
@@ -51,6 +63,12 @@ static NSString *const CYXTopicCellID = @"topic";
     
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([CYXTopicCell class]) bundle:nil] forCellReuseIdentifier:CYXTopicCellID];
     self.tableView.backgroundColor = CYXCommonBgColor;
+}
+
+/**
+ *  刷新
+ */
+- (void)setupRefresh{
     
     // 下拉刷新
     self.tableView.header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewTopics)];
@@ -62,8 +80,7 @@ static NSString *const CYXTopicCellID = @"topic";
     // 上拉刷新
     self.tableView.footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreData)];
     [self.tableView.footer beginRefreshing];
-    
-    CYXLogFuc;
+
 }
 
 #pragma mark 数据处理

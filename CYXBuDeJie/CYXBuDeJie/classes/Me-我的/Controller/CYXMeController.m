@@ -10,6 +10,7 @@
 #import "CYXSettingViewController.h"
 #import "CYXMeCell.h"
 #import "CYXMeFooter.h"
+#import "CYXLoginViewController.h"
 
 @interface CYXMeController ()
 
@@ -110,6 +111,17 @@ static NSString * const CYXMeCellID = @"cell";
     
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+        UIStoryboard *st = [UIStoryboard storyboardWithName:@"CYXTestViewController" bundle:nil];
+        // 根据storyboard ID取到所需的
+        CYXLoginViewController *vc = [st instantiateViewControllerWithIdentifier:@"CYXLoginViewController"];
+
+        [self presentViewController:vc animated:YES completion:nil];
+    
+    
 }
 
 @end
