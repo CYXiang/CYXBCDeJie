@@ -59,6 +59,7 @@ typedef enum {
 /** 是否为动态图 */
 @property (nonatomic, assign) BOOL is_gif;
 
+
 /* 辅助属性 */
 /** 中间控件的frame */
 @property (nonatomic, assign) CGRect centerViewFrame;

@@ -11,6 +11,7 @@
 
 @interface CYXTopicPictureView : UIView
 
++ (instancetype)pictureView;
 /** 帖子模型数据 */
 @property (strong, nonatomic) CYXTopic * topic;
 

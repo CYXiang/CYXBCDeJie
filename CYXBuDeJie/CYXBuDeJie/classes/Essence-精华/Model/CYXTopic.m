@@ -7,6 +7,8 @@
 //
 
 #import "CYXTopic.h"
+#import "CYXComment.h"
+#import "CYXUser.h"
 #import <MJExtension.h>
 
 @implementation CYXTopic
@@ -68,7 +70,65 @@
     }else{  // 非今年
         return _created_at;
     }
+}
+/**
+ *  中间控件的frame
+ */
+- (CGRect)centerViewFrame{
     
+    // 【中间控件】的X值
+    CGFloat centerViewX = CYXMargin;
+    
+    // 文字的Y值
+    CGFloat textY = 55;
+    CGFloat textMaxW = [UIScreen mainScreen].bounds.size.width - 2 * CYXMargin;
+    // 文字的高度（通过Text文字计算）
+    CGFloat textH = [self.text boundingRectWithSize:CGSizeMake(textMaxW, MAXFLOAT) options:NSStringDrawingUsesDeviceMetrics attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15]} context:nil].size.height;
+    
+    // 【中间控件】的Y值
+    CGFloat centerViewY = textY + textH + CYXMargin;
+    
+    // 【中间控件】的W值
+    CGFloat centerViewW = textMaxW;
+
+    
+    // 【中间控件】的H值
+    CGFloat centerViewH = self.height *centerViewW / self.width;
+    
+    if (centerViewH >= [UIScreen mainScreen].bounds.size.height) {
+        centerViewH = 200;
+        self.bigPicture = YES;
+    }
+
+    
+    return CGRectMake(centerViewX, centerViewY, centerViewW, centerViewH);
+}
+
+- (CGFloat)cellHeight{
+
+    // 文字的Y值
+    CGFloat textY = 55;
+    CGFloat textMaxW = [UIScreen mainScreen].bounds.size.width - 2 * CYXMargin;
+    // 文字的高度
+    CGFloat textH = [self.text boundingRectWithSize:CGSizeMake(textMaxW, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:15]} context:nil].size.height;
+    _cellHeight = textY + textH + CYXMargin;
+    
+    if (self.type != CYXTopicTypeWord) { // 有中间内容
+        _cellHeight += self.centerViewFrame.size.height + CYXMargin;
+    }
+    
+    if (self.top_cmt) { // 有最热评论
+        CGFloat topCmtTitleH = 20;
+        NSString *topCmtText = [NSString stringWithFormat:@"%@ : %@", self. top_cmt.user.username, self.top_cmt.content];
+        CGFloat topCmtTextH = [topCmtText boundingRectWithSize:CGSizeMake(textMaxW, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:14]} context:nil].size.height;
+        _cellHeight += topCmtTitleH + topCmtTextH + CYXMargin;
+    }
+    
+    // 底部工具条
+    CGFloat toolbarH = 35;
+    _cellHeight += toolbarH + CYXMargin;
+    
+    return _cellHeight;
 }
 
 @end

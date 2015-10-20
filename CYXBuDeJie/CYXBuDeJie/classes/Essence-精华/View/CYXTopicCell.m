@@ -10,6 +10,7 @@
 #import "CYXTopic.h"
 #import "CYXComment.h"
 #import "CYXUser.h"
+#import "CYXTopicPictureView.h"
 
 @interface CYXTopicCell()
 @property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
@@ -25,10 +26,31 @@
 @property (weak, nonatomic) IBOutlet UILabel *topCmtContentLabel;
 
 
+/** 中间控件 */
+@property (nonatomic,weak) CYXTopicPictureView * pictureView;
+
 @end
 
 @implementation CYXTopicCell
 
+/** pictureView 属性懒加载*/
+- (CYXTopicPictureView *)pictureView
+{
+    if (!_pictureView) {
+        CYXTopicPictureView *pictureView = [CYXTopicPictureView pictureView];
+        [self.contentView addSubview:pictureView];
+        _pictureView = pictureView;
+    }
+    return _pictureView;
+}
+
+- (void)awakeFromNib{
+    self.backgroundView = [[UIImageView alloc]initWithImage:[UIImage imageNamed: @"mainCellBackground"]];
+}
+
+/**
+ *  这个方法调用非常频繁
+ */
 - (void)setTopic:(CYXTopic *)topic{
     _topic = topic;
     
@@ -42,6 +64,7 @@
     [self.repostButton setTitle:[NSString stringWithFormat:@"%zd",topic.repost] forState:UIControlStateNormal];
     [self.commentButton setTitle:[NSString stringWithFormat:@"%zd",topic.comment] forState:UIControlStateNormal];
     
+    // 是否显示最热评论
     if (topic.top_cmt) {
         self.topCmtView.hidden = NO;
         
@@ -49,13 +72,28 @@
         NSString *userName = topic.top_cmt.user.username;
         self.topCmtContentLabel.text = [NSString stringWithFormat:@"%@ : %@",userName,content];
         
-        
     }else{
         self.topCmtView.hidden = YES;
     }
     
+    // 中间的具体内容
+    if (topic.type == CYXTopicTypePicture) {// 显示图片
+        self.pictureView.hidden = NO;
+        self.pictureView.frame = topic.centerViewFrame; // 尺寸
+        self.pictureView.topic = topic; // 数据
+        
+    }else if (topic.type == CYXTopicTypeVoice){
+        self.pictureView.hidden = YES;
+    }else if (topic.type == CYXTopicTypeVideo){
+        self.pictureView.hidden = YES;
+    }else{// 文字
+        self.pictureView.hidden = YES;
+    }
+    
 }
-
+/**
+ *  重写setFrame方法，增加间距
+ */
 - (void)setFrame:(CGRect)frame{
 
     frame.origin.y += CYXMargin;

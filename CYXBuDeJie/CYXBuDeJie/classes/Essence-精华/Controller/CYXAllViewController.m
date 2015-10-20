@@ -54,13 +54,12 @@ static NSString *const CYXTopicCellID = @"topic";
  */
 - (void)setupTable{
     // 设置内边距
-    self.tableView.contentInset = UIEdgeInsetsMake(CYXNavBarBottom + CYXTitlesViewH, 0, CYXTabBarH, 0);
+    self.tableView.contentInset = UIEdgeInsetsMake(CYXNavBarBottom + CYXTitlesViewH, 0, CYXTabBarH + CYXMargin, 0);
     self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
-    
-    self.tableView.rowHeight = 200;
-    // 关闭系统分割线样式
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    
+//    self.tableView.rowHeight = 200;
+    // 关闭系统分割线样式
+    self.tableView.delegate = self;
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([CYXTopicCell class]) bundle:nil] forCellReuseIdentifier:CYXTopicCellID];
     self.tableView.backgroundColor = CYXCommonBgColor;
 }
@@ -156,4 +155,10 @@ static NSString *const CYXTopicCellID = @"topic";
     return cell;
 }
 
+#pragma mark - 代理方法
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return self.topics[indexPath.row].cellHeight;
+
+}
 @end
