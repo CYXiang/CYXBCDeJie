@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CYXSeeBigViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5L-Hc-KHf">
+                    <rect key="frame" x="10" y="40" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="4gY-Ws-Z6G"/>
+                        <constraint firstAttribute="height" constant="35" id="xL7-sr-9yL"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="show_image_back_icon"/>
+                    <connections>
+                        <action selector="backBtnClick" destination="-1" eventType="touchUpInside" id="wlU-m2-rPk"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KbY-F4-kI0">
+                    <rect key="frame" x="520" y="530" width="70" height="30"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="0.58999999999999997" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="FeN-Km-3iq"/>
+                        <constraint firstAttribute="height" constant="30" id="aAF-Fm-yyo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="保存"/>
+                    <connections>
+                        <action selector="saveBtnClick" destination="-1" eventType="touchUpInside" id="QhU-Hs-NdQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="KbY-F4-kI0" secondAttribute="trailing" constant="10" id="34n-9f-GVh"/>
+                <constraint firstAttribute="bottom" secondItem="KbY-F4-kI0" secondAttribute="bottom" constant="40" id="AfC-J8-FrL"/>
+                <constraint firstItem="N5L-Hc-KHf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="U5u-c0-s6i"/>
+                <constraint firstItem="N5L-Hc-KHf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="lIp-bH-Kbq"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="show_image_back_icon" width="35" height="35"/>
+    </resources>
+</document>

@@ -46,6 +46,8 @@
 		8FA443061BD516090069EA3D /* CYXExtensionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA443051BD516090069EA3D /* CYXExtensionConfig.m */; settings = {ASSET_TAGS = (); }; };
 		8FA91B4B1BCC98190068D032 /* NSString+CYXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA91B4A1BCC98190068D032 /* NSString+CYXExtension.m */; settings = {ASSET_TAGS = (); }; };
 		8FA91B4E1BCCA6180068D032 /* CYXClearCacheCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA91B4D1BCCA6180068D032 /* CYXClearCacheCell.m */; settings = {ASSET_TAGS = (); }; };
+		8FB9F1A51BD90D140083DC16 /* CYXSeeBigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9F1A31BD90D140083DC16 /* CYXSeeBigViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8FB9F1A61BD90D140083DC16 /* CYXSeeBigViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FB9F1A41BD90D140083DC16 /* CYXSeeBigViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		8FBD8B551BC692C6007AE903 /* CYXRecommandTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FBD8B541BC692C6007AE903 /* CYXRecommandTagViewController.m */; settings = {ASSET_TAGS = (); }; };
 		8FBD8B591BC693AB007AE903 /* CYXRecommandTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FBD8B571BC693AB007AE903 /* CYXRecommandTagCell.m */; settings = {ASSET_TAGS = (); }; };
 		8FBD8B5A1BC693AB007AE903 /* CYXRecommandTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FBD8B581BC693AB007AE903 /* CYXRecommandTagCell.xib */; settings = {ASSET_TAGS = (); }; };
@@ -163,6 +165,9 @@
 		8FA91B4A1BCC98190068D032 /* NSString+CYXExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CYXExtension.m"; sourceTree = "<group>"; };
 		8FA91B4C1BCCA6180068D032 /* CYXClearCacheCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXClearCacheCell.h; sourceTree = "<group>"; };
 		8FA91B4D1BCCA6180068D032 /* CYXClearCacheCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXClearCacheCell.m; sourceTree = "<group>"; };
+		8FB9F1A21BD90D140083DC16 /* CYXSeeBigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXSeeBigViewController.h; sourceTree = "<group>"; };
+		8FB9F1A31BD90D140083DC16 /* CYXSeeBigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXSeeBigViewController.m; sourceTree = "<group>"; };
+		8FB9F1A41BD90D140083DC16 /* CYXSeeBigViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CYXSeeBigViewController.xib; sourceTree = "<group>"; };
 		8FBD8B531BC692C6007AE903 /* CYXRecommandTagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXRecommandTagViewController.h; sourceTree = "<group>"; };
 		8FBD8B541BC692C6007AE903 /* CYXRecommandTagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXRecommandTagViewController.m; sourceTree = "<group>"; };
 		8FBD8B561BC693AB007AE903 /* CYXRecommandTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXRecommandTagCell.h; sourceTree = "<group>"; };
@@ -271,6 +276,9 @@
 				8F7329591BBAAA840071930C /* CYXEssenceController.m */,
 				8FBD8B531BC692C6007AE903 /* CYXRecommandTagViewController.h */,
 				8FBD8B541BC692C6007AE903 /* CYXRecommandTagViewController.m */,
+				8FB9F1A21BD90D140083DC16 /* CYXSeeBigViewController.h */,
+				8FB9F1A31BD90D140083DC16 /* CYXSeeBigViewController.m */,
+				8FB9F1A41BD90D140083DC16 /* CYXSeeBigViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -688,6 +696,7 @@
 				8FA443031BD50A270069EA3D /* CYXTopicPictureView.xib in Resources */,
 				8FC460581BCC02CF00886B09 /* CYXWebViewController.xib in Resources */,
 				8FBD8B5A1BC693AB007AE903 /* CYXRecommandTagCell.xib in Resources */,
+				8FB9F1A61BD90D140083DC16 /* CYXSeeBigViewController.xib in Resources */,
 				8FDF2A2A1BBC2B930083DB4F /* Test.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -781,6 +790,7 @@
 				8F7097A21BCA7A71003B112C /* CYXMeCell.m in Sources */,
 				8F7329821BBAAA840071930C /* CYXTabBar.m in Sources */,
 				8F502EE71BD0042B0045FF44 /* CYXVoiceViewController.m in Sources */,
+				8FB9F1A51BD90D140083DC16 /* CYXSeeBigViewController.m in Sources */,
 				8FEDB1EB1BBEE36500E8D3BC /* CYXQuickLoginButton.m in Sources */,
 				8F8406281BD3FE5B001D6AA0 /* CYXUser.m in Sources */,
 				8F502EED1BD004600045FF44 /* CYXWordViewController.m in Sources */,

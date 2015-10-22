@@ -10,9 +10,24 @@
             <rect key="frame" x="0.0" y="0.0" width="272" height="170"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="post_placeholderImage" translatesAutoresizingMaskIntoConstraints="NO" id="5Ew-Kc-xfa" userLabel="占位图片">
+                    <rect key="frame" x="64" y="10" width="145" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="okM-xh-P63"/>
+                        <constraint firstAttribute="width" constant="145" id="tux-34-hUc"/>
+                    </constraints>
+                </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d1x-MA-No1" userLabel="图片">
                     <rect key="frame" x="0.0" y="0.0" width="272" height="170"/>
                 </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xMI-KA-w8F" userLabel="进度条" customClass="DALabeledCircularProgressView">
+                    <rect key="frame" x="86" y="35" width="100" height="100"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="99Q-AJ-ldK"/>
+                        <constraint firstAttribute="width" constant="100" id="SYl-5L-pP6"/>
+                    </constraints>
+                </view>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common-gif" translatesAutoresizingMaskIntoConstraints="NO" id="xwV-Gk-RQQ">
                     <rect key="frame" x="0.0" y="0.0" width="31" height="31"/>
                     <constraints>
@@ -30,23 +45,29 @@
                     <state key="normal" title="点击查看大图" image="see-big-picture" backgroundImage="see-big-picture-background"/>
                 </button>
             </subviews>
-            <color key="backgroundColor" name="selectedTextBackgroundColor" catalog="System" colorSpace="catalog"/>
+            <color key="backgroundColor" red="0.83137254901960778" green="0.83137254901960778" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="xwV-Gk-RQQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="5PD-mr-FNq"/>
                 <constraint firstAttribute="bottom" secondItem="d1x-MA-No1" secondAttribute="bottom" id="E8W-80-KYl"/>
                 <constraint firstItem="vng-Ga-kiH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="JIS-ug-8xK"/>
+                <constraint firstItem="xMI-KA-w8F" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="NFK-uy-CKX"/>
+                <constraint firstItem="5Ew-Kc-xfa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="TDb-Ti-sIW"/>
                 <constraint firstAttribute="bottom" secondItem="vng-Ga-kiH" secondAttribute="bottom" id="XYk-vz-s1s"/>
                 <constraint firstAttribute="trailing" secondItem="vng-Ga-kiH" secondAttribute="trailing" id="e9k-bE-GvP"/>
                 <constraint firstItem="d1x-MA-No1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="eh2-zj-Qxv"/>
                 <constraint firstItem="d1x-MA-No1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hP1-7q-1n1"/>
+                <constraint firstItem="5Ew-Kc-xfa" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="hXS-Bh-SQT"/>
                 <constraint firstItem="xwV-Gk-RQQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qLc-D4-HNa"/>
                 <constraint firstAttribute="trailing" secondItem="d1x-MA-No1" secondAttribute="trailing" id="rCE-Np-0Uu"/>
+                <constraint firstItem="xMI-KA-w8F" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="rUm-0U-D9g"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="gitView" destination="xwV-Gk-RQQ" id="4n3-7i-ZNO"/>
                 <outlet property="imageView" destination="d1x-MA-No1" id="aMU-mJ-2rH"/>
+                <outlet property="placeholderView" destination="5Ew-Kc-xfa" id="QYX-IQ-vOp"/>
+                <outlet property="progressView" destination="xMI-KA-w8F" id="eG9-og-TDF"/>
                 <outlet property="seeBigButton" destination="vng-Ga-kiH" id="6ZC-Kx-tg5"/>
             </connections>
             <point key="canvasLocation" x="116" y="101"/>
@@ -54,6 +75,7 @@
     </objects>
     <resources>
         <image name="common-gif" width="31" height="31"/>
+        <image name="post_placeholderImage" width="145" height="30"/>
         <image name="see-big-picture" width="19" height="19"/>
         <image name="see-big-picture-background" width="285" height="43"/>
     </resources>

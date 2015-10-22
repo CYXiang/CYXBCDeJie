@@ -71,38 +71,38 @@
         return _created_at;
     }
 }
-/**
- *  中间控件的frame
- */
-- (CGRect)centerViewFrame{
-    
-    // 【中间控件】的X值
-    CGFloat centerViewX = CYXMargin;
-    
-    // 文字的Y值
-    CGFloat textY = 55;
-    CGFloat textMaxW = [UIScreen mainScreen].bounds.size.width - 2 * CYXMargin;
-    // 文字的高度（通过Text文字计算）
-    CGFloat textH = [self.text boundingRectWithSize:CGSizeMake(textMaxW, MAXFLOAT) options:NSStringDrawingUsesDeviceMetrics attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15]} context:nil].size.height;
-    
-    // 【中间控件】的Y值
-    CGFloat centerViewY = textY + textH + CYXMargin;
-    
-    // 【中间控件】的W值
-    CGFloat centerViewW = textMaxW;
-
-    
-    // 【中间控件】的H值
-    CGFloat centerViewH = self.height *centerViewW / self.width;
-    
-    if (centerViewH >= [UIScreen mainScreen].bounds.size.height) {
-        centerViewH = 200;
-        self.bigPicture = YES;
-    }
-
-    
-    return CGRectMake(centerViewX, centerViewY, centerViewW, centerViewH);
-}
+///**
+// *  中间控件的frame
+// */
+//- (CGRect)centerViewFrame{
+//    
+//    // 【中间控件】的X值
+//    CGFloat centerViewX = CYXMargin;
+//    
+//    // 文字的Y值
+//    CGFloat textY = 55;
+//    CGFloat textMaxW = [UIScreen mainScreen].bounds.size.width - 2 * CYXMargin;
+//    // 文字的高度（通过Text文字计算）
+//    CGFloat textH = [self.text boundingRectWithSize:CGSizeMake(textMaxW, MAXFLOAT) options:NSStringDrawingUsesDeviceMetrics attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15]} context:nil].size.height;
+//    
+//    // 【中间控件】的Y值
+//    CGFloat centerViewY = textY + textH + CYXMargin;
+//    
+//    // 【中间控件】的W值
+//    CGFloat centerViewW = textMaxW;
+//
+//    
+//    // 【中间控件】的H值
+//    CGFloat centerViewH = self.height *centerViewW / self.width;
+//    
+//    if (centerViewH >= [UIScreen mainScreen].bounds.size.height) {
+//        centerViewH = 200;
+//        self.bigPicture = YES;
+//    }
+//
+//    
+//    return CGRectMake(centerViewX, centerViewY, centerViewW, centerViewH);
+//}
 
 - (CGFloat)cellHeight{
 
@@ -113,8 +113,23 @@
     CGFloat textH = [self.text boundingRectWithSize:CGSizeMake(textMaxW, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:15]} context:nil].size.height;
     _cellHeight = textY + textH + CYXMargin;
     
-    if (self.type != CYXTopicTypeWord) { // 有中间内容
-        _cellHeight += self.centerViewFrame.size.height + CYXMargin;
+    // 有中间内容
+    if (self.type != CYXTopicTypeWord) {
+        // 【中间控件】的X值
+        CGFloat centerViewX = CYXMargin;
+        // 【中间控件】的Y值
+        CGFloat centerViewY = textY + textH + CYXMargin;
+        // 【中间控件】的宽度
+        CGFloat centerViewW = textMaxW;
+        // 【中间控件】的高度
+        CGFloat centerViewH = self.height * centerViewW / self.width;
+        if (centerViewH >= [UIScreen mainScreen].bounds.size.height) {
+            centerViewH = 200;
+            self.bigPicture = YES;
+        }
+        _centerViewFrame = CGRectMake(centerViewX, centerViewY, centerViewW, centerViewH);
+        
+        _cellHeight += centerViewH + CYXMargin;
     }
     
     if (self.top_cmt) { // 有最热评论
