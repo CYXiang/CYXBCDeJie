@@ -11,6 +11,8 @@
 #import "CYXComment.h"
 #import "CYXUser.h"
 #import "CYXTopicPictureView.h"
+#import "CYXTopicVideoView.h"
+#import "CYXTopicVoiceView.h"
 
 @interface CYXTopicCell()
 @property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
@@ -26,9 +28,12 @@
 @property (weak, nonatomic) IBOutlet UILabel *topCmtContentLabel;
 
 
-/** 中间控件 */
+/** 图片控件 */
 @property (nonatomic,weak) CYXTopicPictureView * pictureView;
-
+/** 声音控件 */
+@property (nonatomic,weak) CYXTopicVoiceView * voiceView;
+/** 视频控件 */
+@property (nonatomic,weak) CYXTopicVideoView * videoView;
 @end
 
 @implementation CYXTopicCell
@@ -43,6 +48,30 @@
     }
     return _pictureView;
 }
+
+/** voiceView 数据懒加载*/
+- (CYXTopicVoiceView *)voiceView
+{
+    if (!_voiceView) {
+        CYXTopicVoiceView *voiceView = [CYXTopicVoiceView voiceView];
+        [self.contentView addSubview:voiceView];
+        _voiceView = voiceView;
+    }
+    return _voiceView;
+}
+
+/** videoView 数据懒加载*/
+- (CYXTopicVideoView *)videoView
+{
+    if (!_videoView) {
+        CYXTopicVideoView *videoView = [CYXTopicVideoView videoView];
+        [self.contentView addSubview:videoView];
+        _videoView = videoView;
+    }
+    return _videoView;
+}
+
+
 
 - (void)awakeFromNib{
     self.backgroundView = [[UIImageView alloc]initWithImage:[UIImage imageNamed: @"mainCellBackground"]];
@@ -78,16 +107,33 @@
     
     // 中间的具体内容
     if (topic.type == CYXTopicTypePicture) {// 显示图片
+        self.videoView.hidden = YES;
+        self.voiceView.hidden = YES;
+        
         self.pictureView.hidden = NO;
         self.pictureView.frame = topic.centerViewFrame; // 尺寸
         self.pictureView.topic = topic; // 数据
         
     }else if (topic.type == CYXTopicTypeVoice){
         self.pictureView.hidden = YES;
+        self.videoView.hidden = YES;
+        
+        self.voiceView.hidden  =NO;
+        self.voiceView.frame = topic.centerViewFrame;
+        self.voiceView.topic = topic;
+        
     }else if (topic.type == CYXTopicTypeVideo){
         self.pictureView.hidden = YES;
+        self.voiceView.hidden = YES;
+        
+        self.videoView.hidden = NO;
+        self.videoView.frame = topic.centerViewFrame;
+        self.videoView.topic = topic;
+        
     }else{// 文字
         self.pictureView.hidden = YES;
+        self.videoView.hidden = YES;
+        self.voiceView.hidden = YES;
     }
     
 }

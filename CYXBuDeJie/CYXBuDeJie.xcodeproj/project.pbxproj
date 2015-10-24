@@ -53,6 +53,11 @@
 		8FBD8B5A1BC693AB007AE903 /* CYXRecommandTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FBD8B581BC693AB007AE903 /* CYXRecommandTagCell.xib */; settings = {ASSET_TAGS = (); }; };
 		8FC460571BCC02CF00886B09 /* CYXWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC460551BCC02CF00886B09 /* CYXWebViewController.m */; settings = {ASSET_TAGS = (); }; };
 		8FC460581BCC02CF00886B09 /* CYXWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FC460561BCC02CF00886B09 /* CYXWebViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		8FD6F3331BDB15750073B0F4 /* CYXTopicVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD6F3321BDB15750073B0F4 /* CYXTopicVoiceView.m */; settings = {ASSET_TAGS = (); }; };
+		8FD6F3351BDB158E0073B0F4 /* CYXTopicVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FD6F3341BDB158E0073B0F4 /* CYXTopicVoiceView.xib */; settings = {ASSET_TAGS = (); }; };
+		8FD6F3381BDB15B90073B0F4 /* CYXTopicVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD6F3371BDB15B90073B0F4 /* CYXTopicVideoView.m */; settings = {ASSET_TAGS = (); }; };
+		8FD6F33A1BDB15D00073B0F4 /* CYXTopicVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FD6F3391BDB15D00073B0F4 /* CYXTopicVideoView.xib */; settings = {ASSET_TAGS = (); }; };
+		8FD6F33D1BDB32700073B0F4 /* CYXTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD6F33C1BDB32700073B0F4 /* CYXTopicViewController.m */; settings = {ASSET_TAGS = (); }; };
 		8FDF2A281BBC27FE0083DB4F /* CYXSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDF2A271BBC27FE0083DB4F /* CYXSettingViewController.m */; };
 		8FDF2A2A1BBC2B930083DB4F /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FDF2A291BBC2B930083DB4F /* Test.storyboard */; };
 		8FDF2A2D1BBC31140083DB4F /* CYXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDF2A2C1BBC31140083DB4F /* CYXNavigationController.m */; };
@@ -176,6 +181,14 @@
 		8FC460541BCC02CF00886B09 /* CYXWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXWebViewController.h; sourceTree = "<group>"; };
 		8FC460551BCC02CF00886B09 /* CYXWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXWebViewController.m; sourceTree = "<group>"; };
 		8FC460561BCC02CF00886B09 /* CYXWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CYXWebViewController.xib; sourceTree = "<group>"; };
+		8FD6F3311BDB15750073B0F4 /* CYXTopicVoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXTopicVoiceView.h; sourceTree = "<group>"; };
+		8FD6F3321BDB15750073B0F4 /* CYXTopicVoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXTopicVoiceView.m; sourceTree = "<group>"; };
+		8FD6F3341BDB158E0073B0F4 /* CYXTopicVoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CYXTopicVoiceView.xib; sourceTree = "<group>"; };
+		8FD6F3361BDB15B90073B0F4 /* CYXTopicVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXTopicVideoView.h; sourceTree = "<group>"; };
+		8FD6F3371BDB15B90073B0F4 /* CYXTopicVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXTopicVideoView.m; sourceTree = "<group>"; };
+		8FD6F3391BDB15D00073B0F4 /* CYXTopicVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CYXTopicVideoView.xib; sourceTree = "<group>"; };
+		8FD6F33B1BDB326F0073B0F4 /* CYXTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXTopicViewController.h; sourceTree = "<group>"; };
+		8FD6F33C1BDB32700073B0F4 /* CYXTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXTopicViewController.m; sourceTree = "<group>"; };
 		8FDF2A261BBC27FE0083DB4F /* CYXSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXSettingViewController.h; sourceTree = "<group>"; };
 		8FDF2A271BBC27FE0083DB4F /* CYXSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXSettingViewController.m; sourceTree = "<group>"; };
 		8FDF2A291BBC2B930083DB4F /* Test.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
@@ -242,6 +255,8 @@
 				8F502EE91BD004480045FF44 /* CYXPictureViewController.m */,
 				8F502EEB1BD004600045FF44 /* CYXWordViewController.h */,
 				8F502EEC1BD004600045FF44 /* CYXWordViewController.m */,
+				8FD6F33B1BDB326F0073B0F4 /* CYXTopicViewController.h */,
+				8FD6F33C1BDB32700073B0F4 /* CYXTopicViewController.m */,
 			);
 			name = Topic;
 			sourceTree = "<group>";
@@ -571,6 +586,12 @@
 				8FA442FF1BD509FC0069EA3D /* CYXTopicPictureView.h */,
 				8FA443001BD509FC0069EA3D /* CYXTopicPictureView.m */,
 				8FA443021BD50A270069EA3D /* CYXTopicPictureView.xib */,
+				8FD6F3311BDB15750073B0F4 /* CYXTopicVoiceView.h */,
+				8FD6F3321BDB15750073B0F4 /* CYXTopicVoiceView.m */,
+				8FD6F3341BDB158E0073B0F4 /* CYXTopicVoiceView.xib */,
+				8FD6F3361BDB15B90073B0F4 /* CYXTopicVideoView.h */,
+				8FD6F3371BDB15B90073B0F4 /* CYXTopicVideoView.m */,
+				8FD6F3391BDB15D00073B0F4 /* CYXTopicVideoView.xib */,
 			);
 			name = Topic;
 			sourceTree = "<group>";
@@ -695,7 +716,9 @@
 				8F7FCDF81BB6E26600F27474 /* Assets.xcassets in Resources */,
 				8FA443031BD50A270069EA3D /* CYXTopicPictureView.xib in Resources */,
 				8FC460581BCC02CF00886B09 /* CYXWebViewController.xib in Resources */,
+				8FD6F33A1BDB15D00073B0F4 /* CYXTopicVideoView.xib in Resources */,
 				8FBD8B5A1BC693AB007AE903 /* CYXRecommandTagCell.xib in Resources */,
+				8FD6F3351BDB158E0073B0F4 /* CYXTopicVoiceView.xib in Resources */,
 				8FB9F1A61BD90D140083DC16 /* CYXSeeBigViewController.xib in Resources */,
 				8FDF2A2A1BBC2B930083DB4F /* Test.storyboard in Resources */,
 			);
@@ -755,10 +778,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FD6F3381BDB15B90073B0F4 /* CYXTopicVideoView.m in Sources */,
 				8FDF2A2D1BBC31140083DB4F /* CYXNavigationController.m in Sources */,
 				8F7097A51BCA84D5003B112C /* CYXMeFooter.m in Sources */,
 				8F84062B1BD3FE6F001D6AA0 /* CYXComment.m in Sources */,
 				8F445FE21BBDB06A0094765C /* CYXTestViewController.m in Sources */,
+				8FD6F33D1BDB32700073B0F4 /* CYXTopicViewController.m in Sources */,
 				8F1BD1DA1BBF9EEE00EFEF3E /* CYXLoginRegisterTextField.m in Sources */,
 				8FA91B4B1BCC98190068D032 /* NSString+CYXExtension.m in Sources */,
 				8FA443061BD516090069EA3D /* CYXExtensionConfig.m in Sources */,
@@ -771,6 +796,7 @@
 				8F7097AB1BCAB502003B112C /* CYXHTTPSessionManager.m in Sources */,
 				8FF96C551BD2328900F06712 /* CYXTopicCell.m in Sources */,
 				8F8D0F841BC8EEE5004300C5 /* UIImage+CYXExtension.m in Sources */,
+				8FD6F3331BDB15750073B0F4 /* CYXTopicVoiceView.m in Sources */,
 				8FA443011BD509FC0069EA3D /* CYXTopicPictureView.m in Sources */,
 				8F73297B1BBAAA840071930C /* CYXEssenceController.m in Sources */,
 				8F73297E1BBAAA840071930C /* CYXNewController.m in Sources */,

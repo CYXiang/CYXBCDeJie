@@ -6,8 +6,8 @@
 //  Copyright © 2015年 CYX. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "CYXTopicViewController.h"
 
-@interface CYXWordViewController : UITableViewController
+@interface CYXWordViewController : CYXTopicViewController
 
 @end

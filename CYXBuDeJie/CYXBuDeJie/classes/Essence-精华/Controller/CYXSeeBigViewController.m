@@ -10,6 +10,7 @@
 #import "CYXTopic.h"
 #import <UIImageView+WebCache.h>
 #import <SVProgressHUD.h>
+#import <Photos/Photos.h> // iOS8开始可用
 
 @interface CYXSeeBigViewController () <UIScrollViewDelegate>
 
@@ -19,6 +20,8 @@
 @end
 
 @implementation CYXSeeBigViewController
+
+static NSString * const CYXCollectionName = @"CYXBuDeJie";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -63,7 +66,21 @@
 }
 
 - (IBAction)saveBtnClick{
-    UIImageWriteToSavedPhotosAlbum(self.imageView.image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
+//    UIImageWriteToSavedPhotosAlbum(self.imageView.image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
+    
+    // 0.判断状态
+    PHAuthorizationStatus status = [PHPhotoLibrary authorizationStatus];
+    if (status == PHAuthorizationStatusDenied) { // 用户拒绝当前应用访问相册
+        CYXLog(@"用户拒绝当前应用访问相册");
+    }else if (status == PHAuthorizationStatusRestricted){ // 家长控制 - 不允许访问相册
+        CYXLog(@"家长控制 - 不允许访问相册");
+    }else if (status == PHAuthorizationStatusNotDetermined){
+        CYXLog(@"用户还没做出选择");
+        [self saveImage];
+    }else if (status == PHAuthorizationStatusAuthorized){
+        // 用户允许访问相册
+        [self saveImage];
+    }
     
 }
 
@@ -74,6 +91,70 @@
     } else {
         [SVProgressHUD showSuccessWithStatus:@"保存成功"];
     }
+}
+
+- (void)saveImage{
+    
+    __block NSString *assetId = nil;
+    // 1.存储图片到“相机胶卷”
+    [[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
+        // 这个block里面存放一些“修改”性质的代码
+        // 新建一个PHAssetCreationRequest对象，保存图到“相机胶卷”
+        // 返回PHAsset（图片）的字符串标识
+       assetId = [PHAssetChangeRequest creationRequestForAssetFromImage:self.imageView.image].placeholderForCreatedAsset.localIdentifier;
+        
+    } completionHandler:^(BOOL success, NSError * _Nullable error) {
+        if (error) {
+            CYXLog(@"保存图片到相机胶卷中失败");
+            return ;
+        }
+        CYXLog(@"成功保存图片到相机胶卷中");
+        
+        // 2.获得相机对象
+        PHAssetCollection *collection = [self collection];
+        
+        // 3.将“相机胶卷”中的图片 添加到新的相册
+        [[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
+            PHAssetCollectionChangeRequest *request = [PHAssetCollectionChangeRequest changeRequestForAssetCollection:collection];
+            // 根据唯一标识获得相片对象
+            PHAsset *asset = [PHAsset fetchAssetsWithLocalIdentifiers:@[assetId] options:nil].firstObject;
+            
+            // 添加图片到相册中
+            [request addAssets:@[asset]];
+        } completionHandler:^(BOOL success, NSError * _Nullable error) {
+            if (error) {
+                CYXLog(@"添加图片到相册中失败");
+                return ;
+            }
+            
+            CYXLog(@"成功添加图片到相册中");
+            [[NSOperationQueue mainQueue]addOperationWithBlock:^{
+                [SVProgressHUD showSuccessWithStatus:@"保存成功"];
+            }];
+        }];
+        
+    }];
+}
+
+/**
+ *  返回相册
+ */
+- (PHAssetCollection *)collection{
+    // 先获得之前创建过的相册
+    PHFetchResult<PHAssetCollection *> *collectionResult = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeAlbum subtype:PHAssetCollectionSubtypeAlbumRegular options:nil];
+    for (PHAssetCollection *collection in collectionResult) {
+        if ([collection.localizedTitle isEqualToString:CYXCollectionName]) {
+            return collection;
+        }
+    }
+    // 如果相册不存在，就创建新的相册（文件夹）
+    __block NSString *collectionId = nil;
+    // 这个方法会在相册创建完毕后才会返回
+    [[PHPhotoLibrary sharedPhotoLibrary] performChangesAndWait:^{
+        // 新建一个PHAssetCollectionChangeRequest对象，用来创建一个新的相册
+        collectionId = [PHAssetCollectionChangeRequest creationRequestForAssetCollectionWithTitle:CYXCollectionName].placeholderForCreatedAssetCollection.localIdentifier;
+    } error:nil];
+    return [PHAssetCollection fetchAssetCollectionsWithLocalIdentifiers:@[collectionId] options:nil].firstObject;
 }
 
 #pragma mark - <UIScrollViewDelegate>

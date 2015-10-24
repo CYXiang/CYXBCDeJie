@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CYXEssenceController.h"
 
-@interface CYXNewController : UIViewController
+@interface CYXNewController : CYXEssenceController
 
 @end

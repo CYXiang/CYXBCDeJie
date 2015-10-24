@@ -49,6 +49,9 @@
 }
 
 - (void)imageClick{
+    if (self.imageView.image == nil) {
+        return;
+    }
     
     CYXSeeBigViewController *seeBVc = [[CYXSeeBigViewController alloc]init];
     

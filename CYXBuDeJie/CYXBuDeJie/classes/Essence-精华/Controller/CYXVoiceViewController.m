@@ -14,27 +14,8 @@
 
 @implementation CYXVoiceViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    // 设置内边距
-    self.tableView.contentInset = UIEdgeInsetsMake(CYXNavBarBottom + CYXTitlesViewH, 0, CYXTabBarH, 0);
-    self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
-    CYXLogFuc;
-}
-#pragma mark - Table view data source
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 50;
+- (CYXTopicType)type{
+    return CYXTopicTypeVoice;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
-    }
-    
-    cell.textLabel.text = [NSString stringWithFormat:@"%@ - %zd", self.title, indexPath.row];
-    
-    return cell;
-}
 @end
