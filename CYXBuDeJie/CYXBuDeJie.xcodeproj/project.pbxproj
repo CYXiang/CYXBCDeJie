@@ -46,6 +46,8 @@
 		8FA443061BD516090069EA3D /* CYXExtensionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA443051BD516090069EA3D /* CYXExtensionConfig.m */; settings = {ASSET_TAGS = (); }; };
 		8FA91B4B1BCC98190068D032 /* NSString+CYXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA91B4A1BCC98190068D032 /* NSString+CYXExtension.m */; settings = {ASSET_TAGS = (); }; };
 		8FA91B4E1BCCA6180068D032 /* CYXClearCacheCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA91B4D1BCCA6180068D032 /* CYXClearCacheCell.m */; settings = {ASSET_TAGS = (); }; };
+		8FB0E5FF1BDCEB2100988644 /* CYXRecommendUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB0E5FE1BDCEB2100988644 /* CYXRecommendUserCell.m */; settings = {ASSET_TAGS = (); }; };
+		8FB0E6021BDCEE9D00988644 /* CYXRecommendUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB0E6011BDCEE9D00988644 /* CYXRecommendUser.m */; settings = {ASSET_TAGS = (); }; };
 		8FB9F1A51BD90D140083DC16 /* CYXSeeBigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9F1A31BD90D140083DC16 /* CYXSeeBigViewController.m */; settings = {ASSET_TAGS = (); }; };
 		8FB9F1A61BD90D140083DC16 /* CYXSeeBigViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FB9F1A41BD90D140083DC16 /* CYXSeeBigViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		8FBD8B551BC692C6007AE903 /* CYXRecommandTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FBD8B541BC692C6007AE903 /* CYXRecommandTagViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -58,6 +60,9 @@
 		8FD6F3381BDB15B90073B0F4 /* CYXTopicVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD6F3371BDB15B90073B0F4 /* CYXTopicVideoView.m */; settings = {ASSET_TAGS = (); }; };
 		8FD6F33A1BDB15D00073B0F4 /* CYXTopicVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FD6F3391BDB15D00073B0F4 /* CYXTopicVideoView.xib */; settings = {ASSET_TAGS = (); }; };
 		8FD6F33D1BDB32700073B0F4 /* CYXTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD6F33C1BDB32700073B0F4 /* CYXTopicViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8FD6F3401BDB69D30073B0F4 /* CYXRecommendCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD6F33F1BDB69D30073B0F4 /* CYXRecommendCategory.m */; settings = {ASSET_TAGS = (); }; };
+		8FD6F3431BDB6A8E0073B0F4 /* CYXRecommendFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD6F3421BDB6A8E0073B0F4 /* CYXRecommendFollowViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8FD6F3461BDB74AE0073B0F4 /* CYXRecommendCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD6F3451BDB74AE0073B0F4 /* CYXRecommendCategoryCell.m */; settings = {ASSET_TAGS = (); }; };
 		8FDF2A281BBC27FE0083DB4F /* CYXSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDF2A271BBC27FE0083DB4F /* CYXSettingViewController.m */; };
 		8FDF2A2A1BBC2B930083DB4F /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FDF2A291BBC2B930083DB4F /* Test.storyboard */; };
 		8FDF2A2D1BBC31140083DB4F /* CYXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDF2A2C1BBC31140083DB4F /* CYXNavigationController.m */; };
@@ -170,6 +175,10 @@
 		8FA91B4A1BCC98190068D032 /* NSString+CYXExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CYXExtension.m"; sourceTree = "<group>"; };
 		8FA91B4C1BCCA6180068D032 /* CYXClearCacheCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXClearCacheCell.h; sourceTree = "<group>"; };
 		8FA91B4D1BCCA6180068D032 /* CYXClearCacheCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXClearCacheCell.m; sourceTree = "<group>"; };
+		8FB0E5FD1BDCEB2100988644 /* CYXRecommendUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXRecommendUserCell.h; sourceTree = "<group>"; };
+		8FB0E5FE1BDCEB2100988644 /* CYXRecommendUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXRecommendUserCell.m; sourceTree = "<group>"; };
+		8FB0E6001BDCEE9D00988644 /* CYXRecommendUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXRecommendUser.h; sourceTree = "<group>"; };
+		8FB0E6011BDCEE9D00988644 /* CYXRecommendUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXRecommendUser.m; sourceTree = "<group>"; };
 		8FB9F1A21BD90D140083DC16 /* CYXSeeBigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXSeeBigViewController.h; sourceTree = "<group>"; };
 		8FB9F1A31BD90D140083DC16 /* CYXSeeBigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXSeeBigViewController.m; sourceTree = "<group>"; };
 		8FB9F1A41BD90D140083DC16 /* CYXSeeBigViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CYXSeeBigViewController.xib; sourceTree = "<group>"; };
@@ -189,6 +198,12 @@
 		8FD6F3391BDB15D00073B0F4 /* CYXTopicVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CYXTopicVideoView.xib; sourceTree = "<group>"; };
 		8FD6F33B1BDB326F0073B0F4 /* CYXTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXTopicViewController.h; sourceTree = "<group>"; };
 		8FD6F33C1BDB32700073B0F4 /* CYXTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXTopicViewController.m; sourceTree = "<group>"; };
+		8FD6F33E1BDB69D30073B0F4 /* CYXRecommendCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXRecommendCategory.h; sourceTree = "<group>"; };
+		8FD6F33F1BDB69D30073B0F4 /* CYXRecommendCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXRecommendCategory.m; sourceTree = "<group>"; };
+		8FD6F3411BDB6A8E0073B0F4 /* CYXRecommendFollowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXRecommendFollowViewController.h; sourceTree = "<group>"; };
+		8FD6F3421BDB6A8E0073B0F4 /* CYXRecommendFollowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXRecommendFollowViewController.m; sourceTree = "<group>"; };
+		8FD6F3441BDB74AE0073B0F4 /* CYXRecommendCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXRecommendCategoryCell.h; sourceTree = "<group>"; };
+		8FD6F3451BDB74AE0073B0F4 /* CYXRecommendCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXRecommendCategoryCell.m; sourceTree = "<group>"; };
 		8FDF2A261BBC27FE0083DB4F /* CYXSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXSettingViewController.h; sourceTree = "<group>"; };
 		8FDF2A271BBC27FE0083DB4F /* CYXSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXSettingViewController.m; sourceTree = "<group>"; };
 		8FDF2A291BBC2B930083DB4F /* Test.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
@@ -344,6 +359,8 @@
 				8F445FE31BBDB1020094765C /* CYXTestViewController.storyboard */,
 				8F191EBA1BBDB53F00C75CF6 /* CYXLoginViewController.h */,
 				8F191EBB1BBDB53F00C75CF6 /* CYXLoginViewController.m */,
+				8FD6F3411BDB6A8E0073B0F4 /* CYXRecommendFollowViewController.h */,
+				8FD6F3421BDB6A8E0073B0F4 /* CYXRecommendFollowViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -351,6 +368,10 @@
 		8F7329601BBAAA840071930C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8FD6F33E1BDB69D30073B0F4 /* CYXRecommendCategory.h */,
+				8FD6F33F1BDB69D30073B0F4 /* CYXRecommendCategory.m */,
+				8FB0E6001BDCEE9D00988644 /* CYXRecommendUser.h */,
+				8FB0E6011BDCEE9D00988644 /* CYXRecommendUser.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -362,6 +383,10 @@
 				8FEDB1EA1BBEE36500E8D3BC /* CYXQuickLoginButton.m */,
 				8F1BD1D81BBF9EEE00EFEF3E /* CYXLoginRegisterTextField.h */,
 				8F1BD1D91BBF9EEE00EFEF3E /* CYXLoginRegisterTextField.m */,
+				8FD6F3441BDB74AE0073B0F4 /* CYXRecommendCategoryCell.h */,
+				8FD6F3451BDB74AE0073B0F4 /* CYXRecommendCategoryCell.m */,
+				8FB0E5FD1BDCEB2100988644 /* CYXRecommendUserCell.h */,
+				8FB0E5FE1BDCEB2100988644 /* CYXRecommendUserCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -784,9 +809,11 @@
 				8F84062B1BD3FE6F001D6AA0 /* CYXComment.m in Sources */,
 				8F445FE21BBDB06A0094765C /* CYXTestViewController.m in Sources */,
 				8FD6F33D1BDB32700073B0F4 /* CYXTopicViewController.m in Sources */,
+				8FB0E5FF1BDCEB2100988644 /* CYXRecommendUserCell.m in Sources */,
 				8F1BD1DA1BBF9EEE00EFEF3E /* CYXLoginRegisterTextField.m in Sources */,
 				8FA91B4B1BCC98190068D032 /* NSString+CYXExtension.m in Sources */,
 				8FA443061BD516090069EA3D /* CYXExtensionConfig.m in Sources */,
+				8FD6F3431BDB6A8E0073B0F4 /* CYXRecommendFollowViewController.m in Sources */,
 				8F73297D1BBAAA840071930C /* CYXMeController.m in Sources */,
 				8FBD8B591BC693AB007AE903 /* CYXRecommandTagCell.m in Sources */,
 				8F7329851BBAB40D0071930C /* UIBarButtonItem+CYXExtension.m in Sources */,
@@ -799,6 +826,7 @@
 				8FD6F3331BDB15750073B0F4 /* CYXTopicVoiceView.m in Sources */,
 				8FA443011BD509FC0069EA3D /* CYXTopicPictureView.m in Sources */,
 				8F73297B1BBAAA840071930C /* CYXEssenceController.m in Sources */,
+				8FD6F3401BDB69D30073B0F4 /* CYXRecommendCategory.m in Sources */,
 				8F73297E1BBAAA840071930C /* CYXNewController.m in Sources */,
 				8F502EEA1BD004480045FF44 /* CYXPictureViewController.m in Sources */,
 				8F8D0F811BC8BA51004300C5 /* CYXConst.m in Sources */,
@@ -808,11 +836,13 @@
 				8F502EE41BD004190045FF44 /* CYXVideoViewController.m in Sources */,
 				8F8D0F7B1BC8A83B004300C5 /* UITextField+CYXExtension.m in Sources */,
 				8FF96C511BD15CC400F06712 /* CYXTopic.m in Sources */,
+				8FB0E6021BDCEE9D00988644 /* CYXRecommendUser.m in Sources */,
 				8FEDB1E81BBEE30C00E8D3BC /* UIView+CYXFrame.m in Sources */,
 				8FDF2A281BBC27FE0083DB4F /* CYXSettingViewController.m in Sources */,
 				8FA91B4E1BCCA6180068D032 /* CYXClearCacheCell.m in Sources */,
 				8F03263F1BD273B5008DF0D7 /* NSDate+CYXExtension.m in Sources */,
 				8F7329811BBAAA840071930C /* main.m in Sources */,
+				8FD6F3461BDB74AE0073B0F4 /* CYXRecommendCategoryCell.m in Sources */,
 				8F7097A21BCA7A71003B112C /* CYXMeCell.m in Sources */,
 				8F7329821BBAAA840071930C /* CYXTabBar.m in Sources */,
 				8F502EE71BD0042B0045FF44 /* CYXVoiceViewController.m in Sources */,

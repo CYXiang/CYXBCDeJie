@@ -58,6 +58,7 @@ static NSString *const CYXTopicCellID = @"topic";
     // 设置内边距
     self.tableView.contentInset = UIEdgeInsetsMake(CYXNavBarBottom + CYXTitlesViewH, 0, CYXTabBarH + CYXMargin, 0);
     self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
+    // 分割线样式
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     //    self.tableView.rowHeight = 200;
     // 关闭系统分割线样式

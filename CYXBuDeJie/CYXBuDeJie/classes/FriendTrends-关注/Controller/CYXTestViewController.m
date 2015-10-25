@@ -7,6 +7,7 @@
 //
 
 #import "CYXTestViewController.h"
+#import "CYXRecommendFollowViewController.h"
 
 @interface CYXTestViewController ()
 
@@ -21,10 +22,14 @@
     self.navigationItem.title = @"我的关注";
     
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithimageName:@"friendsRecommentIcon" highlightImage:@"friendsRecommentIcon-click" target:self action:@selector(leftBarButtonClick)];
+    
+
 }
 
 - (void)leftBarButtonClick{
-    CYXLogFuc;
+    
+    [self performSegueWithIdentifier:@"TestVC2RecommendVC" sender:nil];
+
 }
 
 
@@ -34,12 +39,12 @@
  *
  *  @param segue
  */
-- (IBAction)backToFriendTrendsViewController:(UIStoryboardSegue *)segue{
-    
-    CYXLog(@"从%@控制器来的",segue.sourceViewController);
-    
-    
-}
+//- (IBAction)backToFriendTrendsViewController:(UIStoryboardSegue *)segue{
+//    
+//    CYXLog(@"从%@控制器来的",segue.sourceViewController);
+//    
+//    
+//}
 
 /*
 #pragma mark - Navigation
