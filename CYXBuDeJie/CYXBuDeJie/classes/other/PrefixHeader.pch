@@ -35,6 +35,16 @@
 #define CYXGrayColor(v) CYXColor(v, v, v)
 #define CYXCommonBgColor CYXGrayColor(206)
 
+// 弱引用
+#define XMGWeakSelf __weak typeof(self) weakSelf = self;
+
+// 将数据写到桌面的plist
+#define XMGWriteToPlist(data, filename) [data writeToFile:[NSString stringWithFormat:@"/Users/Macx/Desktop/%@.plist", filename] atomically:YES];
+
+// 屏幕尺寸
+#define CYXScreenH [UIScreen mainScreen].bounds.size.height
+#define CYXScreenW [UIScreen mainScreen].bounds.size.width
+
 #endif
 
 #endif /* PrefixHeader_pch */

@@ -12,6 +12,9 @@
 		8F1BD1DA1BBF9EEE00EFEF3E /* CYXLoginRegisterTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1BD1D91BBF9EEE00EFEF3E /* CYXLoginRegisterTextField.m */; settings = {ASSET_TAGS = (); }; };
 		8F2971FE1BDF9EEF00A05832 /* CYXCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2971FC1BDF9EEF00A05832 /* CYXCommentCell.m */; settings = {ASSET_TAGS = (); }; };
 		8F2971FF1BDF9EEF00A05832 /* CYXCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F2971FD1BDF9EEF00A05832 /* CYXCommentCell.xib */; settings = {ASSET_TAGS = (); }; };
+		8F3C3E021BE112EF00B8CC0C /* CYXPulishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F3C3E001BE112EF00B8CC0C /* CYXPulishViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8F3C3E031BE112EF00B8CC0C /* CYXPulishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F3C3E011BE112EF00B8CC0C /* CYXPulishViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		8F3C3E061BE1212F00B8CC0C /* CYXPublishButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F3C3E051BE1212F00B8CC0C /* CYXPublishButton.m */; settings = {ASSET_TAGS = (); }; };
 		8F445FE21BBDB06A0094765C /* CYXTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F445FE11BBDB06A0094765C /* CYXTestViewController.m */; };
 		8F445FE41BBDB1020094765C /* CYXTestViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F445FE31BBDB1020094765C /* CYXTestViewController.storyboard */; };
 		8F502EE11BD003FE0045FF44 /* CYXAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F502EE01BD003FE0045FF44 /* CYXAllViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -109,6 +112,11 @@
 		8F2971FB1BDF9EEF00A05832 /* CYXCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXCommentCell.h; sourceTree = "<group>"; };
 		8F2971FC1BDF9EEF00A05832 /* CYXCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXCommentCell.m; sourceTree = "<group>"; };
 		8F2971FD1BDF9EEF00A05832 /* CYXCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CYXCommentCell.xib; sourceTree = "<group>"; };
+		8F3C3DFF1BE112EF00B8CC0C /* CYXPulishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXPulishViewController.h; sourceTree = "<group>"; };
+		8F3C3E001BE112EF00B8CC0C /* CYXPulishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXPulishViewController.m; sourceTree = "<group>"; };
+		8F3C3E011BE112EF00B8CC0C /* CYXPulishViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CYXPulishViewController.xib; sourceTree = "<group>"; };
+		8F3C3E041BE1212F00B8CC0C /* CYXPublishButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXPublishButton.h; sourceTree = "<group>"; };
+		8F3C3E051BE1212F00B8CC0C /* CYXPublishButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXPublishButton.m; sourceTree = "<group>"; };
 		8F445FE01BBDB06A0094765C /* CYXTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYXTestViewController.h; sourceTree = "<group>"; };
 		8F445FE11BBDB06A0094765C /* CYXTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYXTestViewController.m; sourceTree = "<group>"; };
 		8F445FE31BBDB1020094765C /* CYXTestViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CYXTestViewController.storyboard; sourceTree = "<group>"; };
@@ -267,6 +275,34 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		8F3C3DFC1BE10E3900B8CC0C /* Publish-发布 */ = {
+			isa = PBXGroup;
+			children = (
+				8F3C3DFD1BE10E3900B8CC0C /* Controller */,
+				8F3C3DFE1BE10E3900B8CC0C /* View */,
+			);
+			path = "Publish-发布";
+			sourceTree = "<group>";
+		};
+		8F3C3DFD1BE10E3900B8CC0C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8F3C3DFF1BE112EF00B8CC0C /* CYXPulishViewController.h */,
+				8F3C3E001BE112EF00B8CC0C /* CYXPulishViewController.m */,
+				8F3C3E011BE112EF00B8CC0C /* CYXPulishViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8F3C3DFE1BE10E3900B8CC0C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8F3C3E041BE1212F00B8CC0C /* CYXPublishButton.h */,
+				8F3C3E051BE1212F00B8CC0C /* CYXPublishButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		8F502EDE1BD003C20045FF44 /* Topic */ = {
 			isa = PBXGroup;
 			children = (
@@ -289,6 +325,7 @@
 		8F7329551BBAAA840071930C /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				8F3C3DFC1BE10E3900B8CC0C /* Publish-发布 */,
 				8F7329561BBAAA840071930C /* Essence-精华 */,
 				8F7329681BBAAA840071930C /* New-新帖 */,
 				8F73295C1BBAAA840071930C /* FriendTrends-关注 */,
@@ -752,6 +789,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F3C3E031BE112EF00B8CC0C /* CYXPulishViewController.xib in Resources */,
 				8FF96C561BD2328900F06712 /* CYXTopicCell.xib in Resources */,
 				8F445FE41BBDB1020094765C /* CYXTestViewController.storyboard in Resources */,
 				8F7FCDF81BB6E26600F27474 /* Assets.xcassets in Resources */,
@@ -846,6 +884,7 @@
 				8FD6F3331BDB15750073B0F4 /* CYXTopicVoiceView.m in Sources */,
 				8FA443011BD509FC0069EA3D /* CYXTopicPictureView.m in Sources */,
 				8F73297B1BBAAA840071930C /* CYXEssenceController.m in Sources */,
+				8F3C3E061BE1212F00B8CC0C /* CYXPublishButton.m in Sources */,
 				8FD6F3401BDB69D30073B0F4 /* CYXRecommendCategory.m in Sources */,
 				8F73297E1BBAAA840071930C /* CYXNewController.m in Sources */,
 				8F502EEA1BD004480045FF44 /* CYXPictureViewController.m in Sources */,
@@ -873,6 +912,7 @@
 				8F73297F1BBAAA840071930C /* AppDelegate.m in Sources */,
 				8F8D0F871BC8EF07004300C5 /* UIImageView+CYXExtension.m in Sources */,
 				8FBD8B551BC692C6007AE903 /* CYXRecommandTagViewController.m in Sources */,
+				8F3C3E021BE112EF00B8CC0C /* CYXPulishViewController.m in Sources */,
 				8F502EE11BD003FE0045FF44 /* CYXAllViewController.m in Sources */,
 				8F7097A81BCAA5DE003B112C /* CYXSquareButton.m in Sources */,
 				8F70979F1BCA7A4F003B112C /* CYXMeSquare.m in Sources */,

@@ -7,6 +7,7 @@
 //
 
 #import "CYXTabBar.h"
+#import "CYXPulishViewController.h"
 
 @interface CYXTabBar ()
 
@@ -28,6 +29,8 @@
         [sendBtn setImage:[UIImage imageNamed:@"tabBar_publish_click_icon"] forState:UIControlStateSelected];
         
         [sendBtn sizeToFit];
+        
+        [sendBtn addTarget:self action:@selector(sendBtnClick) forControlEvents:UIControlEventTouchUpInside];
     
         [self addSubview:sendBtn];
         
@@ -36,6 +39,14 @@
     }
     
     return self;
+}
+
+- (void)sendBtnClick{
+    
+    CYXPulishViewController *vc = [[CYXPulishViewController alloc]init];
+    
+    [self.window.rootViewController presentViewController:vc animated:NO completion:nil];
+    
 }
 
 /**
