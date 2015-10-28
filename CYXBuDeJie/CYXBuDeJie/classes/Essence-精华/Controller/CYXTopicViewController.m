@@ -11,6 +11,7 @@
 #import "CYXTopic.h"
 #import "CYXTopicCell.h"
 #import "CYXNewController.h"
+#import "CYXCommentViewController.h"
 #import <MJExtension.h>
 #import <MJRefresh.h>
 
@@ -112,7 +113,7 @@ static NSString *const CYXTopicCellID = @"topic";
         weakSelf.maxtime = responseObject[@"info"][@"maxtime"];
         
         weakSelf.topics =  [CYXTopic objectArrayWithKeyValuesArray:responseObject[@"list"]];
-        
+        CYXLog(@"%@",responseObject[@"list"]);
         [weakSelf.tableView reloadData];
         
         // 结束刷新
@@ -141,6 +142,8 @@ static NSString *const CYXTopicCellID = @"topic";
         weakSelf.maxtime = responseObject[@"info"][@"maxtime"];
         
         NSArray *moreTopics =  [CYXTopic objectArrayWithKeyValuesArray:responseObject[@"list"]];
+//        CYXLog(@"%@",responseObject[@"list"]);
+
         // 增加到以前数组的最后
         [weakSelf.topics addObjectsFromArray:moreTopics];
         
@@ -168,10 +171,17 @@ static NSString *const CYXTopicCellID = @"topic";
 }
 
 #pragma mark - 代理方法
-
+// 设置行高
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return self.topics[indexPath.row].cellHeight;
     
+}
+// 点击哪一行的Cell
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    CYXCommentViewController *commentVc = [[CYXCommentViewController alloc]init];
+    commentVc.topic = self.topics[indexPath.row];
+    [self.navigationController pushViewController:commentVc animated:YES];
 }
 
 @end

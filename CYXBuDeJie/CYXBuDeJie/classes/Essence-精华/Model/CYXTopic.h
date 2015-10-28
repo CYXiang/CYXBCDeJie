@@ -26,6 +26,8 @@ typedef enum {
 @interface CYXTopic : NSObject
 
 // 用户 -- 发帖者
+/** id */
+@property (nonatomic, copy) NSString *id;
 /** 用户的名字 */
 @property (nonatomic, copy) NSString *name;
 /** 用户的头像 */

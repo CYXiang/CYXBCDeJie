@@ -11,11 +11,16 @@
 @class CYXUser;
 
 @interface CYXComment : NSObject
+/** id */
+@property (nonatomic, copy) NSString *id;
 
 /** 评论内容 */
-@property (nonatomic,copy) NSString *content;
+@property (nonatomic, copy) NSString *content;
 
 /** 发表这条评论的用户 */
-@property (strong, nonatomic) CYXUser *user;
+@property (nonatomic, strong) CYXUser *user;
+
+/** 被点赞数 */
+@property (nonatomic, assign) NSInteger like_count;
 
 @end

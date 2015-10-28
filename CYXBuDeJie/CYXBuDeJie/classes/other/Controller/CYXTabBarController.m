@@ -99,7 +99,6 @@
 - (void)setUpOneViewController:(UIViewController *)vc title:(NSString *)title image:(NSString *)image selectImage:(NSString *)selectImage
 {
     CYXLog(@"%s", __func__);
-//    vc.view.backgroundColor = CYXRandomColor;
     vc.tabBarItem.title = title;
     vc.tabBarItem.image = [UIImage imageNamed:image];
     vc.tabBarItem.selectedImage = [UIImage imageNamed:selectImage];

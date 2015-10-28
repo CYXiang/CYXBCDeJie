@@ -94,13 +94,14 @@
     [self.commentButton setTitle:[NSString stringWithFormat:@"%zd",topic.comment] forState:UIControlStateNormal];
     
     // 是否显示最热评论
+    CYXLog(@"%@",topic.top_cmt);
+
     if (topic.top_cmt) {
         self.topCmtView.hidden = NO;
         
         NSString *content = topic.top_cmt.content;
         NSString *userName = topic.top_cmt.user.username;
         self.topCmtContentLabel.text = [NSString stringWithFormat:@"%@ : %@",userName,content];
-        
     }else{
         self.topCmtView.hidden = YES;
     }

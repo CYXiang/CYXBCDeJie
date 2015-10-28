@@ -66,9 +66,7 @@
         // 添加子控件
         CYXSquareButton *button = [CYXSquareButton buttonWithType:UIButtonTypeCustom];
         [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
-        
-//        button.backgroundColor = CYXRandomColor;
-        
+                
         [self addSubview:button];
         
         // 设置frame
