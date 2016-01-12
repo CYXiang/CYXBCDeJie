@@ -32,9 +32,18 @@
             double unit = 1000.0;
             unsigned long long fileSize = [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)firstObject] stringByAppendingPathComponent:@"default"].fileSize;
 //            unsigned long long fileSize = @"/Users/Macx/Desktop/本地课堂共享".fileSize;
-
+            NSString *fileSizeText = nil;
+            if (fileSize >= pow(unit, 3)) { // fileSize >= 1GB
+                fileSizeText = [NSString stringWithFormat:@"%.2fGB", fileSize / pow(unit, 3)];
+            } else if (fileSize >= pow(unit, 2)) { // fileSize >= 1MB
+                fileSizeText = [NSString stringWithFormat:@"%.2fMB", fileSize / pow(unit, 2)];
+            } else if (fileSize >= unit) { // fileSize >= 1KB
+                fileSizeText = [NSString stringWithFormat:@"%.2fKB", fileSize / unit];
+            } else { // fileSize < 1KB
+                fileSizeText = [NSString stringWithFormat:@"%zdB", fileSize];
+            }
             
-            NSString *text = [NSString stringWithFormat:@"清除缓存(%zd)B",fileSize] ;
+            NSString *text = [NSString stringWithFormat:@"清除缓存(%@)", fileSizeText];
             
             // 回到主线程更新UI
             [[NSOperationQueue mainQueue]addOperationWithBlock:^{
